@@ -36,44 +36,10 @@
     font-size: 23px;
   }
 
-  .projects{
-    flex-direction: column;
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .project{
-    padding: 20px 0;
-    border: 2px solid lightgray;
-    border-radius: 30px;
-    background-color: black;
-  }
-
-  .project img {
-    opacity: 0.15;
-    border: 3px solid white;
-  }
-
-  .overlay{
-    border-radius: 30px;
-    opacity: 1;
-  }
-
-  .overlay:hover{
-    display: none;
-  }
-
   .modal-inner{
     width: 600px;
   }
-
-  .footer h1{
-    display: none;
-  }
-
-  .footer-list{
-    display: inline-block;
-  }
+}
 
 @media all and (max-width: 768px) {
   .work-section{
@@ -94,6 +60,16 @@
 
   .modal-inner{
     width: 550px;
+  }
+
+  .footer h1 {
+    display: none;
+  }
+
+  .footer-list {
+    padding: 0;
+    float: none;
+    text-align: center;
   }
 }
 
@@ -201,6 +177,10 @@
     padding: 0;
   }
 
+  .formal-section, .skills-section, .achievement-section{
+    border-bottom: none;
+  }
+
   .academic-list{
     padding: 20px 0;
   }
@@ -217,6 +197,22 @@
     width: 100%;
   }
 
+  .projects{
+    padding: 20px 0 30px;
+  }
+
+  .projects li{
+    padding: 0 5px 30px;
+  }
+
+  .project-content img{
+    display: block;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
   .modal-inner{
     width: 300px;
   }
@@ -225,42 +221,12 @@
     font-size: 12px;
   }
 
-  .footer{
-    padding: 0 10px;
-  }
-
-  .footer-list{
-    width: 100%;
+  .footer-list a {
+    padding-left: 20px;
   }
 
   .footer-list .contact {
     font-size: 12px;
+    padding-left: 10px;
   }
-}
-
-@media all and (max-width: 320px) {
-  .profile-content h1{
-    font-size: 22px;
-  }
-
-  .profile-content h2{
-    font-size: 13px;
-  }
-
-  .profile-content p{
-    font-size: 13px;
-  }
-
-  .footer{
-    padding: 0;
-  }
-
-  .footer-list .fa {
-    margin: 0 10px;
-  }
-
-  .footer-list .contact {
-    margin-right: 10px;
-  }
-
 }
