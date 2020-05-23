@@ -118,14 +118,11 @@ class Projects extends React.Component{
           <ul className="projects">
           {projectList.map((projectItem)=>{
             return(
-              <div key={projectItem.id}>
-                <li className="project">
+              <li className="project" key={projectItem.id} onClick={()=>{this.handleClickProject(projectItem)}}>
+                <div className="project-content">
                   <img src={projectItem.image} />
-                  <div className="overlay" onClick={()=>{this.handleClickProject(projectItem)}}>
-                    <h1>{projectItem.name}</h1>
-                  </div>
-                </li>
-              </div>
+                </div>
+              </li>
             );
           })}
           </ul>
