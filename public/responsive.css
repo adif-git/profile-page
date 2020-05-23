@@ -200,7 +200,7 @@
   .main{
     padding: 0;
   }
-  
+
   .academic-list{
     padding: 20px 0;
   }
@@ -236,4 +236,31 @@
   .footer-list .contact {
     font-size: 12px;
   }
+}
+
+@media all and (max-width: 320px) {
+  .profile-content h1{
+    font-size: 22px;
+  }
+
+  .profile-content h2{
+    font-size: 13px;
+  }
+
+  .profile-content p{
+    font-size: 13px;
+  }
+
+  .footer{
+    padding: 0;
+  }
+
+  .footer-list .fa {
+    margin: 0 10px;
+  }
+
+  .footer-list .contact {
+    margin-right: 10px;
+  }
+
 }
