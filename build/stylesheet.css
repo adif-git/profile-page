@@ -307,50 +307,26 @@ a {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 10px 0 0;
-  padding: 0 0 100px;
-}
-
-.project {
-  flex: auto;
-  position: relative;
-  margin: 20px 15px;
-  cursor: pointer;
-}
-
-.project img {
-  max-width: 250px;
-  max-height: 250px;
-  width: auto;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-}
-
-.overlay h1 {
-  color: white;
-  font-size: 20px;
   margin: 0;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+  padding: 80px 0 40px;
 }
 
-.overlay:hover {
-  opacity: 0.92;
-  background-color: #00A7E1;
+.projects li{
+  flex: auto;
+  cursor: pointer;
+  padding: 0 40px 50px;
+  position: relative;
+}
+
+.project-content img{
+  border-radius: 20px;
+  border: 4px solid red;
+  opacity: 0.65;
+}
+
+.project-content img:hover{
+  opacity: 1;
+  border: 4px solid green;
 }
 
 .modal {
@@ -366,11 +342,11 @@ a {
 
 .modal-inner {
   position: absolute;
-  height: 60%;
+  height: 70%;
   top: 5%;
   right: 0;
   left: 0;
-  width: 500px;
+  width: 70%;
   padding: 20px 30px 30px;
   margin: auto;
   background-color: white;
@@ -440,29 +416,28 @@ a {
 .footer {
   width: 100%;
   background-color: black;
-  height: 60px;
+  height: 50px;
   border-top: 2px solid rgba(229, 226, 236, 0.2);
-  padding: 0 100px;
   background-color: #003459;
-  margin: 0;
 }
 
 .footer h1 {
   color: white;
   margin: 0;
-  line-height: 60px;
-  font-size: 20px;
-  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  float: left;
+  padding-left: 50px;
 }
 
 .footer-list {
-  display: none;
-  line-height: 60px;
-  height: inherit;
+  float: right;
+  line-height: 50px;
+  padding-right: 50px;
 }
 
 .footer-list a {
-  margin: 0 30px;
+  padding-left: 40px;
   color: white;
 }
 
@@ -471,13 +446,8 @@ a {
   font-weight: bold;
 }
 
-.footer-list .fa {
-  margin: 0 20px;
-}
-
 .footer-list .contact {
-  margin-left: 2px;
-  margin-right: 20px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
+  padding-left: 10px;
 }
