@@ -1,0 +1,239 @@
+/* THIS FILE FOR SPECIFICATION FOR RESPONSIVE WEB VIEW */
+
+@media all and (max-width: 1100px) {
+
+}
+
+@media all and (max-width: 992px) {
+  .header-top h1{
+    float: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header-list{
+    display: none;
+  }
+
+  .profile-content h1{
+    font-size: 40px;
+  }
+
+  .profile-content h2{
+    font-size: 20px;
+  }
+
+  .profile-content p{
+    font-size: 18px;
+  }
+
+  .skill-title{
+    width: 50%;
+    padding-bottom: 10px;
+  }
+
+  .achievement-section h2{
+    font-size: 23px;
+  }
+
+  .projects{
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .project{
+    padding: 20px 0;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    background-color: black;
+  }
+
+  .project img {
+    opacity: 0.15;
+    border: 3px solid white;
+  }
+
+  .overlay{
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  .overlay:hover{
+    display: none;
+  }
+
+  .modal-inner{
+    width: 600px;
+  }
+
+  .footer h1{
+    display: none;
+  }
+
+  .footer-list{
+    display: inline-block;
+  }
+
+@media all and (max-width: 768px) {
+  .work-section{
+    padding: 30px;
+  }
+
+  .work-section h1{
+    font-size: 23px;
+  }
+
+  .work-section h2{
+    font-size: 16px;
+  }
+
+  .work-section h3{
+    font-size: 16px;
+  }
+
+  .modal-inner{
+    width: 550px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header-top{
+    height: 60px;
+  }
+
+  .header-top h1{
+    font-size: 22px;
+    line-height: 60px;
+  }
+
+  .main{
+    padding: 0 30px;
+  }
+
+  .main-title {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .profile-content h1{
+    font-size: 28px;
+  }
+
+  .profile-content h2{
+    font-size: 16px;
+  }
+
+  .profile-content p{
+    font-size: 15px;
+  }
+
+  .formal-section {
+    padding-bottom: 20px;
+  }
+
+  .academic-list h1, .skills-section h1, .achievement-section h1{
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .achievement-section h2{
+    font-size: 20px;
+  }
+
+  .achievement-section h3 {
+    font-size: 18px;
+  }
+
+  .achievement-section p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .work-section h1{
+    font-size: 20px;
+  }
+
+  .work-section h2{
+    font-size: 14px;
+  }
+
+  .work-section h3{
+    font-size: 14px;
+  }
+
+  .work-section p{
+    font-size: 14px;
+  }
+
+  .modal-inner{
+    width: 430px;
+  }
+
+  .modal-inner img{
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .modal-inner h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .modal-inner h3{
+    font-size: 17px;
+  }
+  .modal-inner p{
+    font-size: 15px;
+  }
+
+  .tags-item{
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .header-top{
+    display: none;
+  }
+
+  .main{
+    padding: 0;
+  }
+  
+  .academic-list{
+    padding: 20px 0;
+  }
+
+  .profile {
+    top: 100px;
+  }
+
+  .background {
+    height: 450px;
+  }
+
+  .skill-title{
+    width: 100%;
+  }
+
+  .modal-inner{
+    width: 300px;
+  }
+
+  .modal-inner p{
+    font-size: 12px;
+  }
+
+  .footer{
+    padding: 0 10px;
+  }
+
+  .footer-list{
+    width: 100%;
+  }
+
+  .footer-list .contact {
+    font-size: 12px;
+  }
+}
