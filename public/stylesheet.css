@@ -1,32 +1,19 @@
 * {
-  box-sizing: border-box;
   font-family: Arial;
 }
 
-body {
-  margin: 0;
-  background-color: #FFF;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* =============================HEADER========================================= */
-.header {
-  width: 100%;
-  background-color: black;
-  position: relative;
-}
-
 .background {
-  background-image: url("./Images/header.jpg");
+  background: url("./Images/Adif.jpg") center;
   background-size: cover;
-  opacity: 0.2;
-  height: 550px;
+  opacity: 0.9;
+  height: 500px;
+
+  display: grid;
+  align-items: center;
 }
 
-.header-top {
+/* .header-top {
   position: fixed;
   width: 100%;
   margin: 0px;
@@ -77,9 +64,9 @@ a {
 .header-info {
   width: 800px;
   margin: 0 auto;
-}
+} */
 
-.profile {
+/* .profile {
   position: absolute;
   width: 100%;
   top: 160px;
@@ -124,7 +111,7 @@ a {
 .profile-content span {
   padding-right: 10px;
   color: #00A7E1;
-}
+} */
 
 /* =========================MAIN================================= */
 .main {
