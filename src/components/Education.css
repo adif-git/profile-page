@@ -1,27 +1,27 @@
-.education{
+.education-section{
     text-align: center;
     padding: 50px 0;
     background-color: rgb(245, 245, 245);
 }
 
-.education h2{
+.education-section h2{
    font-size: 18px; 
    font-weight: 700;
    color: #00A7E1;
    margin-top: 25px;
 }
 
-.education h3{
+.education-section h3{
     font-size: 15px;
     font-weight: 600;
 }
 
-.education h4{
+.education-section h4{
     font-size: 13px;
     font-weight: 600;
 }
 
-.education p{
+.education-section p{
     font-size: 13px;
     margin: 0;
     font-style: italic;

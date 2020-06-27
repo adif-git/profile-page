@@ -1,5 +1,6 @@
 import React from 'react'
 import SkillsContent from './SkillsContent'
+import './Skills.css'
 
 class Skills extends React.Component{
   render(){
@@ -13,24 +14,24 @@ class Skills extends React.Component{
       {
         id: '2',
         name: 'Embedded System',
-        items: ['Arduino', 'Eagle' ,'ESP32', 'Linux' ,'OpenCV', 'Raspberry Pi']
+        items: ['Arduino', 'Eagle' ,'ESP32' ,'Computer Vision (OpenCV)', 'Raspberry Pi']
       },
       {
         id: '3',
         name: 'Web Development',
-        items: ['Flask', 'Django', 'HTML', 'CSS', 'JavaScript', 'SQL']
+        items: ['HTML', 'CSS', 'JavaScript','Node.js', 'React.js', 'MySQL']
       },
       {
         id: '4',
         name: 'Other',
-        items: ['Adobe Photoshop']
+        items: ['Adobe Photoshop', 'Linux', 'Git']
       },
     ];
 
     return(
       <div className="skills-section">
-        <h1><span className="sign">&#62;</span>SKILLS<span className="sign">&#60;</span></h1>
-        <ul className="skills">
+        <h1 className="title"><span className="sign">&#187;</span>SKILLS<span className="sign">&#171;</span></h1>
+        {/* <ul className="skills">
           {skillList.map((skillItem)=>{
             return(
               <SkillsContent
@@ -40,7 +41,18 @@ class Skills extends React.Component{
               />
             );
           })}
-        </ul>
+        </ul> */}
+        <div className="row row-cols-1 row-cols-md-4 px-lg-5">
+          {skillList.map((skillItem)=>{
+            return(
+              <SkillsContent
+                key = {skillItem.id}
+                name = {skillItem.name}
+                items = {skillItem.items}
+              />
+            );
+          })}
+        </div>
       </div>
     )
   }

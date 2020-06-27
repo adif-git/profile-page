@@ -27,13 +27,13 @@ class Header extends React.Component{
             <h1 className="">Ladiva Bachrulrachman</h1>
             <div className="container-fluid header-list">
               <div className="row text-center">
-                <div class="col">
+                <div className="col">
                   <span className="fa fa-envelope fa-md"></span>
                 </div>
-                <div class="col">
+                <div className="col">
                   <a className="fa fa-linkedin fa-md" href="https://www.linkedin.com/in/ladivab"></a>
                 </div>
-                <div class="col">
+                <div className="col">
                   <a className="fa fa-github fa-md" href="https://github.com/adif-git"></a>
                 </div>
               </div>

@@ -29,7 +29,7 @@ class Education extends React.Component{
       //   </ul>
       // </div>
 
-      <div className="education">
+      <div className="education-section">
         <h1 className="title"><span className="sign">&#187;</span>EDUCATION<span className="sign">&#171;</span></h1>
         <h2>Bachelor of Electrical Engineering</h2>
         <h3>Institut Teknologi Sepuluh Nopember</h3>
