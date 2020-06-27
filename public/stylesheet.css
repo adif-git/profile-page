@@ -114,7 +114,7 @@
 } */
 
 /* =========================MAIN================================= */
-.main {
+/* .main {
   width: 100%;
   padding: 0 100px;
   background-color: #F2F2F2;
@@ -146,8 +146,21 @@
   color: black;
   letter-spacing: -1px;
   margin: 0;
+} */
+
+.sign {
+  font-weight: 900;
+  padding: 0 10px;
+  color: #00A7E1;
+  font-size: 45px;
+ 
 }
 
+.title{
+  font-weight: 900;
+  font-size: 35px;
+  color: #00080D;
+}
 /* ==========================ACHIEVEMENTS================================= */
 .achievement-section {
   padding: 20px 40px;
@@ -169,7 +182,7 @@
 }
 
 /* ==========================EDUCATION================================== */
-.formal-section {
+/* .formal-section {
   margin: 0;
   border-bottom: 2px solid #CCCCCC;
   padding-bottom: 50px;
@@ -213,7 +226,7 @@
 
 .certification h4 {
   padding: 5px 0 40px;
-}
+} */
 
 /* ==========================SKILLS================================== */
 .skills-section {
