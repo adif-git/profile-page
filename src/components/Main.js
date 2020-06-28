@@ -23,6 +23,7 @@ class Main extends React.Component{
       // </div>
       <div>
         <Education />
+        <Achievements />
         <Skills />
       </div>
     );
