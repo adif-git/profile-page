@@ -152,13 +152,13 @@
   font-weight: 900;
   padding: 0 10px;
   color: #00A7E1;
-  font-size: 45px;
+  font-size: 35px;
  
 }
 
 .title{
   font-weight: 900;
-  font-size: 35px;
+  font-size: 25px;
   color: #00080D;
 }
 /* ==========================ACHIEVEMENTS================================= */
@@ -269,7 +269,7 @@
 } */
 
 /* ==========================WORK EXPERIENCES============================== */
-.work-section {
+/* .work-section {
   background-color: white;
   text-align: left;
   padding: 40px 80px;
@@ -300,7 +300,7 @@
   margin: 0;
   text-align: justify;
   padding-top: 15px;
-}
+} */
 
 /* ==========================PROJECTS============================== */
 .projects {

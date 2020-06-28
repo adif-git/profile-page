@@ -1,0 +1,33 @@
+.work-section{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.work-section h1{
+    padding-bottom: 30px;
+    margin: 0;
+}
+.timeline{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #074E8C;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 27px;
+    }
+}
