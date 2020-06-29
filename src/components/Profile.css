@@ -1,0 +1,31 @@
+.introduction{
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    width: 230px;
+}
+
+.introduction p{
+    color: #2AB7FF;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.introduction h1{
+    display: inline-block;
+    padding-bottom: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-bottom: 2px solid #2AB7FF;
+}
+
+.header-list {
+    font-size: 16px;
+}
+
+.header-list a , .header-list span{
+    color: white;
+}
