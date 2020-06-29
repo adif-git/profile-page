@@ -26,6 +26,7 @@ class Main extends React.Component{
         <Achievements />
         <Skills />
         <Work />
+        <Projects />
       </div>
     );
   }
