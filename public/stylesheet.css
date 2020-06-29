@@ -160,6 +160,7 @@
   font-weight: 900;
   font-size: 25px;
   color: #00080D;
+  text-align: center;
 }
 /* ==========================ACHIEVEMENTS================================= */
 /* .achievement-section {
@@ -303,7 +304,7 @@
 } */
 
 /* ==========================PROJECTS============================== */
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -411,9 +412,9 @@
   border-radius: 10px;
   margin: 5px 10px;
   color: #003459;
-}
+} */
 /* ============================FOOTER========================== */
-.footer {
+/* .footer {
   width: 100%;
   background-color: black;
   height: 50px;
@@ -450,4 +451,4 @@
   font-weight: bold;
   font-size: 15px;
   padding-left: 10px;
-}
+} */
