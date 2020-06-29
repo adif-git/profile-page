@@ -7,6 +7,7 @@ import Skills from './Skills'
 import Work from './Work'
 import Achievements from './Achievements'
 import Projects from './Projects'
+import Certifications from './Certifications'
 
 class Main extends React.Component{
   render(){
@@ -24,6 +25,7 @@ class Main extends React.Component{
       <div>
         <Education />
         <Achievements />
+        <Certifications />
         <Skills />
         <Work />
         <Projects />

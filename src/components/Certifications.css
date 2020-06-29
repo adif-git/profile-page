@@ -1,0 +1,18 @@
+.certifications-section{
+    background-color: #f5f5f5;
+    padding: 30px 0;
+}
+
+.certifications-section h2{
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #00A7E1;
+}
+
+.certifications-section h4{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
