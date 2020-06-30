@@ -11,9 +11,14 @@
 
 .nav-content{
     color: white !important;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 17px;
     padding-left: 12px;
-    border-left: 3px solid #3ebeff;
+    border-left: 3px solid #0378A6;
     margin: 15px 0 0 20px;
+}
+
+.nav-content:hover{
+    color: #88DFF2 !important;
+    cursor: pointer;
 }
