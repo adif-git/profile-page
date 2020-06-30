@@ -21,3 +21,12 @@
     font-weight: 600;
     color: #023262;
 }
+
+.project a{
+    color: #011C40;
+}
+.project a:hover{
+    color: #88DFF2;
+    font-weight: 900;
+    text-decoration: none;
+}

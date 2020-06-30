@@ -1,34 +1,7 @@
 import React from 'react'
-import {Accordion, Card, Button} from 'react-bootstrap'
 import './Projects.css'
 
 class Projects extends React.Component{
-  // //INITIAL STATE
-  // constructor(props){
-  //   super(props);
-  //   this.state={
-  //     isModalOpen: false,
-  //     name: '',
-  //     description: '',
-  //     image: '',
-  //     tags: '',
-  //   };
-  // }
-  // //FUNCTION WHEN PROJECT IS CLICK
-  // handleClickProject(item){
-  //   this.setState({
-  //     isModalOpen: true,
-  //     name: item.name,
-  //     description: item.description,
-  //     image: item.image,
-  //     tags: item.tags,
-  //   });
-  // }
-  // //FUNCTION IF CLOSE BUTTON PRESSED IN MODAL PROJECT
-  // handleClickClose(){
-  //   this.setState({isModalOpen: false});
-  // }
-
   //OBJECTS OF PROJECTS
   render(){
     const projectList = [
@@ -38,17 +11,17 @@ class Projects extends React.Component{
         image: './Images/42612.jpg',
         tags:['Raspberry Pi', 'Computer Vision', 'Embedded System', 'C++'],
         description: "Build from scratch quadcopter with only purpose to count number of vehicles that are travel on road in real time using computer vision. Capable to count with approximately 60% accuracy. Besides number of vehicles, quadcopter's altitude and video stream also will be recorded.",
-        video: '',
-        link: '',
+        media: '/#',
+        github: '/#',
       },
       {
         id: '2',
         name: 'Library',
         image: './Images/Homepage.png',
-        tags:['Website', 'Django', 'HTML', 'CSS', 'Python', 'SQL'],
+        tags:['Web Development', 'Django', 'HTML', 'CSS', 'Python', 'SQL'],
         description: 'First time on building website using Django and MySQL as backend. Authorized users have access to add, update, and delete book/author.',
-        video: '',
-        link: '',
+        media: 'https://github.com/adif-git/library/tree/master/Screenshot',
+        github: 'https://github.com/adif-git/library',
       },
       {
         id: '3',
@@ -56,8 +29,8 @@ class Projects extends React.Component{
         image: './Images/Goalkeeper.png',
         tags:['Raspberry Pi', 'Arduino', 'Computer Vision', 'Embedded System', 'C++'],
         description: 'Robot will autonomously move and follow wherever ball is moving like a goalkeeper. Developed in C++ with computer vision based on color detection.',
-        video: '',
-        link: '',
+        media: '/#',
+        github: '/#',
       },
       {
         id: '4',
@@ -65,17 +38,17 @@ class Projects extends React.Component{
         image: './Images/Hexapod.png',
         tags:['Raspberry Pi', 'Arduino', 'Embedded System', 'C++', 'Python'],
         description: 'Hexapod robot which can be remotely control through WiFi. User will control robot movement wirelessly.',
-        video: '',
-        link: '',
+        media: '/#',
+        github: '/#',
       },
       {
         id: '5',
         name: 'GitHub Profile Page',
         image: './Images/Profile.png',
-        tags:['Website', 'React.js', 'HTML', 'CSS', 'JavaScript'],
+        tags:['Web Development', 'React.js', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
         description: 'This profile page build using React.js. Visit my GitHub page to see other projects.',
-        video: '',
-        link: '',
+        media: 'https://adif-git.github.io/profile-page/',
+        github: 'https://github.com/adif-git/profile-page',
       },
     ];
 
@@ -134,13 +107,23 @@ class Projects extends React.Component{
         </div>
         {modal} */}
         <h1 className="title"><span className="sign">&#187;</span>PROJECTS<span className="sign">&#171;</span></h1>
-        <div className="card-columns mx-4">
+        <div className="card-columns mx-4 mt-5">
           {projectList.map((projectItem)=>{
               return(
-                <div className="card" key={projectItem.id}>
+                <div className="project card shadow-lg mb-5" key={projectItem.id}>
                   <img src={projectItem.image} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title">{projectItem.name}</h5>
+                    <div className="container">
+                      <div className="row justify-content-center">
+                        <div className="col-2">
+                          <a className="fa fa-github fa-lg" href={projectItem.github}></a>
+                        </div>
+                        <div className="col-2">
+                          <a className="fa fa-image fa-lg" href={projectItem.media}></a>
+                        </div>
+                      </div>
+                    </div>
                     <p className="card-text">{projectItem.description}</p>
                     <div className="row row-cols-2 border-top">
                       {tagsContent(projectItem.tags)}
