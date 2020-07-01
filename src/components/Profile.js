@@ -9,20 +9,34 @@ class Profile extends React.Component{
         <div className='background'>
           <div className="introduction ml-auto">
             <p className="">Hello! My name is</p>
-            <h1 className="">Ladiva Bachrulrachman</h1>
-            <div className="container-fluid header-list">
-              <div className="row text-center">
-                <div className="col">
-                  <span className="fa fa-envelope fa-md"></span>
+            <h1 className="">LADIVA BACHRULRACHMAN</h1>
+            {/* <div className="container-fluid header-list d-flex justify-content-center">
+              <div className="row">
+                <div className="col-auto">
+                  <span className="fa fa-envelope fa-md" data-toggle="tooltip" data-placement="top" title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></span>
                 </div>
-                <div className="col">
-                  <a className="fa fa-linkedin" href="https://www.linkedin.com/in/ladivab"></a>
+                <div className="col-auto">
+                  
                 </div>
-                <div className="col">
-                  <a className="fa fa-github" href="https://github.com/adif-git"></a>
+                <div className="col-auto">
+                  
                 </div>
               </div>
-            </div>
+            </div> */}
+            <ul className="list-group list-group-horizontal-xl">
+              <li className="list-group-item">
+                <a><span className="fa fa-envelope"></span></a>
+                adif.ladiva@gmail.com
+              </li>
+              <li className="list-group-item">
+                <a href="https://www.linkedin.com/in/ladivab"><span className="fa fa-linkedin"></span></a>
+                linkedin.com/in/ladivab
+              </li>
+              <li className="list-group-item">
+                <a href="https://github.com/adif-git"><span className="fa fa-github" ></span></a>
+                github.com/adif-git
+              </li>
+            </ul>
           </div>
         </div>
       </div>
