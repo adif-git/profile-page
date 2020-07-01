@@ -14,11 +14,11 @@
     font-weight: 600;
     font-size: 17px;
     padding-left: 12px;
-    border-left: 3px solid #0378A6;
+    border-left: 3px solid #04C4D9;
     margin: 15px 0 0 20px;
 }
 
 .nav-content:hover{
-    color: #88DFF2 !important;
+    color: #04D9D9 !important;
     cursor: pointer;
 }

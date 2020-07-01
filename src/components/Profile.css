@@ -6,7 +6,7 @@
 }
 
 .introduction p{
-    color: #2AB7FF;
+    color: rgb(0, 255, 242);
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -19,13 +19,16 @@
     font-size: 25px;
     font-weight: bold;
     margin-top: 15px;
-    border-bottom: 2px solid #2AB7FF;
-}
-
-.header-list {
-    font-size: 16px;
+    border-bottom: 3px solid #04C4D9;
 }
 
 .header-list a , .header-list span{
     color: white;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.header-list a:hover{
+    text-decoration: none;
+    color: #04D9D9 !important;
 }

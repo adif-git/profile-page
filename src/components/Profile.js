@@ -16,10 +16,10 @@ class Profile extends React.Component{
                   <span className="fa fa-envelope fa-md"></span>
                 </div>
                 <div className="col">
-                  <a className="fa fa-linkedin fa-md" href="https://www.linkedin.com/in/ladivab"></a>
+                  <a className="fa fa-linkedin" href="https://www.linkedin.com/in/ladivab"></a>
                 </div>
                 <div className="col">
-                  <a className="fa fa-github fa-md" href="https://github.com/adif-git"></a>
+                  <a className="fa fa-github" href="https://github.com/adif-git"></a>
                 </div>
               </div>
             </div>
