@@ -5,7 +5,7 @@ import './Achievements.css'
 class Achievements extends React.Component{
   render(){
     return(
-      <div className="achievements-section">
+      <div className="container-fluid achievements-section">
         {/* <h1><span className="sign">&#62;</span>ACHIEVEMENT<span className="sign">&#60;</span></h1>
         <h2>Global Korean Scholarship (GKS) for ASEAN Countries Science and Engineering Students</h2>
         <h3>July 2017</h3>

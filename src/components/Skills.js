@@ -29,7 +29,7 @@ class Skills extends React.Component{
     ];
 
     return(
-      <div className="skills-section">
+      <div className="container-fluid skills-section">
         <h1 className="title"><span className="sign">&#187;</span>SKILLS<span className="sign">&#171;</span></h1>
         {/* <ul className="skills">
           {skillList.map((skillItem)=>{

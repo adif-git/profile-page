@@ -90,7 +90,7 @@ class Projects extends React.Component{
     // }
 
     return(
-      <div className="projects-section">
+      <div className="container-fluid projects-section">
         {/* <h1 className="main-title">PROJECTS</h1>
         <div className="one-section">
           <ul className="projects">

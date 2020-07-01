@@ -41,7 +41,7 @@ class Work extends React.Component{
     ];
 
     return(
-      <div className="work-section">
+      <div className="work-section container-fluid">
         <h1 className="title"><span className="sign">&#187;</span>WORK EXPERIENCES<span className="sign">&#171;</span></h1>
         {/* <div className="one-section">
           {workList.map((workItem)=>{
