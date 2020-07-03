@@ -2,13 +2,10 @@
 // > ABOUT ME CONSIST OF EDUCATION SECTION, SKILLS SECTION, AND ACHIEVEMENTS SECTION.
 
 import React from 'react'
-import Profile from './Profile'
-import Education from './Education'
 import Skills from './Skills'
 import Work from './Work'
-import Achievements from './Achievements'
 import Projects from './Projects'
-import Certifications from './Certifications'
+import AboutMe from './AboutMe';
 
 class Main extends React.Component{
   render(){
@@ -24,10 +21,7 @@ class Main extends React.Component{
       //   <Projects />
       // </div>
       <div>
-        <Profile />
-        <Education />
-        <Achievements />
-        <Certifications />
+        <AboutMe />
         <Skills />
         <Work />
         <Projects />
