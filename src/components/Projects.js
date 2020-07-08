@@ -110,7 +110,7 @@ class Projects extends React.Component{
         <div className="card-columns mx-4 mt-5">
           {projectList.map((projectItem)=>{
               return(
-                <div className="project card shadow-lg mb-5" key={projectItem.id}>
+                <div className="project card pb-2" key={projectItem.id}>
                   <img src={projectItem.image} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title">{projectItem.name}</h5>
