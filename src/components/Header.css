@@ -5,7 +5,7 @@
 
 .navbar-colored{
     background: #011826;
-    opacity: 0.97;
+    opacity: 0.95;
     transition: 0.3s;
 }
 
@@ -21,4 +21,11 @@
 .nav-content:hover{
     color: #04D9D9 !important;
     cursor: pointer;
+}
+
+@media (max-width:400px){
+    .navbar{
+        background: #011826;
+        opacity: 0.95;
+    }
 }

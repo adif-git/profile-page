@@ -26,7 +26,6 @@ class Header extends React.Component{
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = winScroll / height;
-    // console.log(scrolled)
     this.setState({
       position: scrolled,
     })
