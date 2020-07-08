@@ -10,7 +10,7 @@ class SkillsContent extends React.Component{
       for(let idx in itemList)
       {
         // content.push(<li key={itemList[idx]} className="skill-item">{itemList[idx]}</li>);
-        content.push(<li key={itemList[idx]} className="list-group-item py-0 mb-3 border-top-0 skill-list">{itemList[idx]}</li>);
+        content.push(<li key={itemList[idx]} className="text-center list-group-item py-0 mb-3 border-top-0 skill-list">{itemList[idx]}</li>);
       }
       return content;
     };
