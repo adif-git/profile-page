@@ -31,17 +31,6 @@ class Skills extends React.Component{
     return(
       <div className="container-fluid skills-section">
         <h1 className="title"><span className="sign">&#187;</span>SKILLS<span className="sign">&#171;</span></h1>
-        {/* <ul className="skills">
-          {skillList.map((skillItem)=>{
-            return(
-              <SkillsContent
-                key = {skillItem.id}
-                name = {skillItem.name}
-                items = {skillItem.items}
-              />
-            );
-          })}
-        </ul> */}
         <div className="row row-cols-1 row-cols-md-4 px-lg-5">
           {skillList.map((skillItem)=>{
             return(

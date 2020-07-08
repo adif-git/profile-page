@@ -10,6 +10,7 @@ class AboutMe extends React.Component{
       <div>
         <Profile />
         <div className="container-fluid">
+            {/* Divide into two columns for Education and Certifications section */}
             <div className="row row-cols-1 row-cols-sm-2">
                 <Education />
                 <Certifications />

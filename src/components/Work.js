@@ -43,20 +43,6 @@ class Work extends React.Component{
     return(
       <div className="work-section container-fluid">
         <h1 className="title"><span className="sign">&#187;</span>WORK EXPERIENCES<span className="sign">&#171;</span></h1>
-        {/* <div className="one-section">
-          {workList.map((workItem)=>{
-            return(
-              <WorkContent
-                key = {workItem.id}
-                name = {workItem.name}
-                type = {workItem.type}
-                place = {workItem.place}
-                date = {workItem.date}
-                description = {workItem.description}
-              />
-            );
-          })}
-        </div> */}
         <div className="timeline">
           {workList.map((workItem)=>{
               return(

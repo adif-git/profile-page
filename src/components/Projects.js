@@ -58,54 +58,14 @@ class Projects extends React.Component{
       for(let idx in tagsList)
       {
         content.push(
-          // <li key={tagsList[idx]} className="tags-item">{tagsList[idx]}</li>
           <div className="col tags pt-2" key={tagsList[idx]}>{tagsList[idx]}</div>
         );
       }
       return content;
     };
 
-    //MODAL CONDITION WHEN PROJECT IS CLICK
-    // let modal;
-    // if(this.state.isModalOpen){
-    //   modal = (
-    //       <div className="modal">
-    //         <div className="modal-inner">
-    //           <img src={this.state.image} />
-    //           <h2>{this.state.name}</h2>
-    //           <h3>Description:</h3>
-    //           <div className="tags">
-    //             <ul>{tagsContent(this.state.tags)}</ul>
-    //           </div>
-    //           <p>{this.state.description}</p>
-    //           <button
-    //             className="modal-close-btn"
-    //             onClick={()=>{this.handleClickClose()}}
-    //           >
-    //             Close
-    //           </button>
-    //         </div>
-    //       </div>
-    //   )
-    // }
-
     return(
       <div className="container-fluid projects-section">
-        {/* <h1 className="main-title">PROJECTS</h1>
-        <div className="one-section">
-          <ul className="projects">
-          {projectList.map((projectItem)=>{
-            return(
-              <li className="project" key={projectItem.id} onClick={()=>{this.handleClickProject(projectItem)}}>
-                <div className="project-content">
-                  <img src={projectItem.image} />
-                </div>
-              </li>
-            );
-          })}
-          </ul>
-        </div>
-        {modal} */}
         <h1 className="title"><span className="sign">&#187;</span>PROJECTS<span className="sign">&#171;</span></h1>
         <div className="card-columns mx-4 mt-5">
           {projectList.map((projectItem)=>{

@@ -1,5 +1,4 @@
-// MAIN BODY OF THE WEB, SEPARATED INTO "ABOUT ME", "WORK EXPERIENCES", AND "PROJECTS".
-// > ABOUT ME CONSIST OF EDUCATION SECTION, SKILLS SECTION, AND ACHIEVEMENTS SECTION.
+// MAIN BODY OF THE WEB, SEPARATED INTO "ABOUT ME", "SKILLS", "WORK EXPERIENCES", AND "PROJECTS".
 
 import React from 'react'
 import Skills from './Skills'
@@ -10,16 +9,6 @@ import AboutMe from './AboutMe';
 class Main extends React.Component{
   render(){
     return(
-      // <div className="main">
-      //   <div className="one-section">
-      //     <h1 className="main-title">ABOUT ME</h1>
-      //     <Education />
-      //     <Skills />
-      //     <Achievements />
-      //   </div>
-      //   <Work />
-      //   <Projects />
-      // </div>
       <div>
         <AboutMe />
         <Skills />

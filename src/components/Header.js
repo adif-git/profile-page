@@ -9,11 +9,12 @@ class Header extends React.Component{
   constructor(props){
     super(props);
     this.state={
+      //Initial state for scroll position
       position: 0,
     };
-
     this.listenToScroll = this.listenToScroll.bind(this);
   }
+
   componentDidMount(){
     window.addEventListener('scroll', this.listenToScroll)
   }
@@ -23,14 +24,19 @@ class Header extends React.Component{
   }
 
   listenToScroll=()=>{
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //Get the value when scrolled vertically
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop; 
+    //Measure the height (scrollHeight(with padding & margin) - clientHeight(without border,margin))
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //Scrolled value ranged from 0-1
     const scrolled = winScroll / height;
     this.setState({
-      position: scrolled,
+      position: scrolled, 
+      //Update scroll position value
     })
 
     let nav = document.getElementById('nav');
+    //Navbar will be colored if passing profile section location
     if(this.state.position > 0.045){
         nav.classList.add("navbar-colored");
         nav.classList.remove("navbar");

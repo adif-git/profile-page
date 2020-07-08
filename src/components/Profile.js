@@ -1,4 +1,4 @@
-// PROFILE SECTION IN HEADER
+// PROFILE SECTION
 import React from 'react'
 import './Profile.css'
 
@@ -10,22 +10,9 @@ class Profile extends React.Component{
           <div className="introduction ml-auto">
             <p className="">Hello! My name is</p>
             <h1 className="">LADIVA BACHRULRACHMAN</h1>
-            {/* <div className="container-fluid header-list d-flex justify-content-center">
-              <div className="row">
-                <div className="col-auto">
-                  <span className="fa fa-envelope fa-md" data-toggle="tooltip" data-placement="top" title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></span>
-                </div>
-                <div className="col-auto">
-                  
-                </div>
-                <div className="col-auto">
-                  
-                </div>
-              </div>
-            </div> */}
             <ul className="list-group list-group-horizontal-xl">
               <li className="list-group-item">
-                <a><span className="fa fa-envelope"></span></a>
+                <a href="https://mail.google.com"><span className="fa fa-envelope"></span></a>
                 adif.ladiva@gmail.com
               </li>
               <li className="list-group-item">

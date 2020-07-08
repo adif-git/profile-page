@@ -88,7 +88,7 @@
 }
 
 @media screen and (max-width: 600px) {
-/* Full-width containers */
+    /* Full-width containers */
     .work-container {
         width: 100%;
         padding-left: 60px;

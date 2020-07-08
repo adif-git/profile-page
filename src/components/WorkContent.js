@@ -5,6 +5,7 @@ import './WorkContent.css'
 class WorkContent extends React.Component{
   render(){
     let content;
+    //container on the left for even number id
     if(this.props.id % 2 === 0){
       content = (
       <div className="work-container left">
@@ -17,6 +18,7 @@ class WorkContent extends React.Component{
       </div>
       );
     } else {
+      //container on the right for odd number id
       content = (
         <div className="work-container right">
           <div className="content">
@@ -29,12 +31,6 @@ class WorkContent extends React.Component{
       );
     }
     return(
-      // <div className="work-section">
-      //   <h1>{this.props.name}</h1>
-      //   <h2>{this.props.place}</h2>
-      //   <h3>{this.props.type}  ( {this.props.date} )</h3>
-      //   <p>{this.props.description}</p>
-      // </div>
       <div>
         {content}
       </div>

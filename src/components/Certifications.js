@@ -26,7 +26,7 @@ class Certifications extends React.Component{
         <div className="row row-cols-1 px-3">
             {certList.map((cert)=>{
               return(
-                <div className="" key={cert.id}>
+                <div key={cert.id}>
                   <h2>{cert.title}</h2>
                   <h4>{cert.organization}</h4>
                 </div>
