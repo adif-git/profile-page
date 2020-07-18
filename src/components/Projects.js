@@ -76,7 +76,7 @@ class Projects extends React.Component{
       for(let idx in tagsList)
       {
         content.push(
-          <div className="col tags pt-2" key={tagsList[idx]}>{tagsList[idx]}</div>
+          <div className="col tags py-2" key={tagsList[idx]}>{tagsList[idx]}</div>
         );
       }
       return content;
@@ -88,14 +88,14 @@ class Projects extends React.Component{
         <div className="card-columns mx-4 mt-5">
           {projectList.map((projectItem)=>{
               return(
-                <div className="project card pb-2" key={projectItem.id}>
+                <div className="project card" key={projectItem.id}>
                   <img src={projectItem.image} className="card-img-top" alt="..." />
-                  <div className="card-body">
+                  <div className="card-body pb-2">
                     <h5 className="card-title">{projectItem.name}</h5>
                     <div className="container">
                       <div className="d-flex justify-content-center">
-                        <a className="fa fa-github fa-lg px-1" href={projectItem.github}></a>
-                        <a className="fa fa-image fa-lg px-1" href={projectItem.media}></a>
+                        <a className="fa fa-github fa-lg px-1" href={projectItem.github} aria-hidden={false}>{null}</a>
+                        <a className="fa fa-image fa-lg px-1" href={projectItem.media}>{null}</a>
                       </div>
                     </div>
                     <p className="card-text">{projectItem.description}</p>

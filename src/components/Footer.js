@@ -11,10 +11,10 @@ class Footer extends React.Component{
             <span className="align-middle">&#169; 2020, Ladiva Bachrulrachman</span>
           </div>
           <div className="col-1">
-            <a className="fa fa-linkedin fa-sm" href="https://www.linkedin.com/in/ladivab"></a>
+            <a className="fa fa-linkedin fa-sm" href="https://www.linkedin.com/in/ladivab">{null}</a>
           </div>
           <div className="col-1">
-            <a className="fa fa-github fa-sm" href="https://github.com/adif-git"></a>
+            <a className="fa fa-github fa-sm" href="https://github.com/adif-git">{null}</a>
           </div>
         </div>
       </div>
