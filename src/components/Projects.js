@@ -29,7 +29,7 @@ class Projects extends React.Component{
                     <div className="container">
                       <div className="d-flex justify-content-center">
                         <a className="fa fa-github fa-lg px-1" href={projectItem.github} aria-hidden={false} target="_blank" rel="noopener noreferrer">{null}</a>
-                        <a className="fa fa-image fa-lg px-1" href={projectItem.media} target="_blank" rel="noopener noreferrer">{null}</a>
+                        <a className="fa fa-link fa-lg px-1" href={projectItem.media} target="_blank" rel="noopener noreferrer">{null}</a>
                       </div>
                     </div>
                     <p className="card-text">{projectItem.description}</p>
