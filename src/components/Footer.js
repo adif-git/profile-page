@@ -8,13 +8,7 @@ class Footer extends React.Component{
       <div className="footer-section">
         <div className="row">
           <div className="col">
-            <span className="align-middle">&#169; 2020, Ladiva Bachrulrachman</span>
-          </div>
-          <div className="col-1">
-            <a className="fa fa-linkedin fa-sm" href="https://www.linkedin.com/in/ladivab">{null}</a>
-          </div>
-          <div className="col-1">
-            <a className="fa fa-github fa-sm" href="https://github.com/adif-git">{null}</a>
+            <span className="align-middle">&#169; 2020, adif-git</span>
           </div>
         </div>
       </div>
