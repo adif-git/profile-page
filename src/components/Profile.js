@@ -12,15 +12,15 @@ class Profile extends React.Component{
             <h1 className="">LADIVA BACHRULRACHMAN</h1>
             <ul className="list-group list-group-horizontal-xl">
               <li className="list-group-item">
-                <a href="https://mail.google.com"><span className="fa fa-envelope"></span></a>
+                <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer"><span className="fa fa-envelope"></span></a>
                 adif.ladiva@gmail.com
               </li>
               <li className="list-group-item">
-                <a href="https://www.linkedin.com/in/ladivab"><span className="fa fa-linkedin"></span></a>
+                <a href="https://www.linkedin.com/in/ladivab" target="_blank" rel="noopener noreferrer"><span className="fa fa-linkedin"></span></a>
                 linkedin.com/in/ladivab
               </li>
               <li className="list-group-item">
-                <a href="https://github.com/adif-git"><span className="fa fa-github" ></span></a>
+                <a href="https://github.com/adif-git" target="_blank" rel="noopener noreferrer"><span className="fa fa-github" ></span></a>
                 github.com/adif-git
               </li>
             </ul>
