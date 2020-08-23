@@ -2,6 +2,10 @@
   font-family: Arial;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* =============================HEADER========================================= */
 .background {
   background: url("./Images/Adif.jpg") center;

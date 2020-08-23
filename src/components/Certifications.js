@@ -23,7 +23,7 @@ class Certifications extends React.Component{
     return(
       <div className="container-fluid certifications-section">
         <h1 className="title"><span className="sign">&#187;</span>CERTIFICATIONS<span className="sign">&#171;</span></h1>
-        <div className="row row-cols-1 px-3">
+        <div className="row row-cols-1">
             {certList.map((cert)=>{
               return(
                 <div key={cert.id}>

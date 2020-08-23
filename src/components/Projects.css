@@ -4,6 +4,10 @@
     padding: 40px 0;
 }
 
+.projects-section .card-columns{
+    margin: 50px 40px 0;
+}
+
 .card-title{
     font-size: 20px;
     font-weight: bold;
@@ -30,4 +34,19 @@
     color: #88DFF2;
     font-weight: 900;
     text-decoration: none;
+} 
+
+
+
+@media (max-width: 1000px) {
+    .projects-section .card-columns{
+        column-count: 2;
+        margin: 50px 0px 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .projects-section .card-columns{
+        column-count: 1;
+    }
 }

@@ -23,3 +23,9 @@
     padding: 0 30px;
     text-align: justify;
 }
+
+@media (max-width: 500px){
+    .achievements-section h3, .achievements-section p{
+        padding: 0 5px; 
+    }
+}

@@ -9,16 +9,27 @@
     font-size: 14px;
     font-weight: 800;
     margin: 0;
+    float: left;
 }
 
 .credit{
-    float: right;
     color: white;
     font-size: 14px;
     font-weight: 800;
+    float: right;
 }
 
 .credit:hover{
     text-decoration: none;
     color: #04D9D9;
+}
+
+@media (max-width: 380px){
+    .footer-section{
+        padding: 10px 15px;
+    }
+
+    .footer-section span, .credit{
+        font-size: 10px;
+    }
 }
