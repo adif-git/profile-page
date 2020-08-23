@@ -7,12 +7,12 @@ const skillsList = [
     {
       id: '2',
       name: 'Embedded System',
-      items: ['Arduino', 'Eagle' ,'ESP32' ,'Computer Vision (OpenCV)', 'Raspberry Pi']
+      items: ['Arduino', 'Eagle' ,'ESP' ,'Computer Vision (OpenCV)', 'Raspberry Pi']
     },
     {
       id: '3',
       name: 'Web Development',
-      items: ['HTML', 'CSS','Node.js', 'React.js', 'MySQL', 'MongoDB', "Docker"]
+      items: ['HTML', 'CSS', 'Bootstrap', 'Node.js', 'React.js', 'MySQL', 'MongoDB', "Docker"]
     },
     {
       id: '4',
