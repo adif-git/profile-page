@@ -6,7 +6,19 @@
 
 .footer-section span{
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
     margin: 0;
+}
+
+.credit{
+    float: right;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.credit:hover{
+    text-decoration: none;
+    color: #04D9D9;
 }

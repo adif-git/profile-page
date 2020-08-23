@@ -19,6 +19,7 @@ class App extends React.Component {
   componentDidMount(){
     this.setState({isLoading: false})
   }
+  
   render() {
     return (
       this.state.isLoading ? 
