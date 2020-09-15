@@ -1,19 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react'
+import certsList from '../contents/Certifications'
 import './Education.css'
 
-class Education extends React.Component{
-  render(){
+const Education = props => {
+    const [certificates] = useState(certsList)
+
     return(
-      <div className="container-fluid education-section">
-        <h1 className="title"><span className="sign">&#187;</span>EDUCATION<span className="sign">&#171;</span></h1>
-        <h2>Bachelor of Electrical Engineering</h2>
-        <h3>Institut Teknologi Sepuluh Nopember</h3>
-        <h4>August 2015 - September 2019</h4>
-        <p>Concentration : Electronics</p>
-        <p>GPA : 3.63 / 4.00</p>
-      </div>
-    );
-  }
+        <div className="education-section">
+            <div className="header-section">
+                <h1>EDUCATION</h1>
+            </div>
+            <div className="body-section">
+                <div className="education">
+                    <div className="degree">
+                        <h3>Bachelor of Electrical Engineering</h3>
+                        <h4>Institut Teknologi Sepuluh Nopember</h4>
+                        <p>Concentration : Electronics</p>
+                        <p>GPA : 3.63 / 4.00</p>
+                    </div>
+                    <div className="certifications">
+                        <h2>Certifications: </h2>
+                        <div className="certificate">
+                            {certificates.map((certificate)=>{
+                                return(
+                                    <div key={certificate.id}>
+                                        <h3>{certificate.title}</h3>
+                                        <h4>{certificate.organization}</h4>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
-export default Education;
+export default Education

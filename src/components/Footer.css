@@ -1,35 +1,119 @@
-.footer-section{
-    padding: 10px 30px;
-    background-color: #002842;
-    border-top: 2px solid #2AB7FF;
+footer{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.89);
+    flex-wrap: wrap;
 }
 
-.footer-section span{
-    color: white;
-    font-size: 14px;
-    font-weight: 800;
+.contacts{
+    width: 60%;
+}
+
+.contacts h3{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--yellow);
+}
+
+.contacts ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    float: left;
 }
 
-.credit{
-    color: white;
-    font-size: 14px;
-    font-weight: 800;
-    float: right;
+.contact{
+    margin-right: 1vw;
 }
 
-.credit:hover{
+.contact i{
+    padding-right: 10px;
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+.contact a{
     text-decoration: none;
-    color: #04D9D9;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: white;
+    transition: var(--transition-speed) ease;
 }
 
-@media (max-width: 380px){
-    .footer-section{
-        padding: 10px 15px;
+.info-footer{
+    margin-right: 1vw;
+    font-weight: 700;
+    text-align: right;
+}
+
+.info-footer p{
+    padding: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.info-footer span{
+    color: var(--yellow);
+}
+
+.info-footer a{
+    text-decoration: none;
+    color: white;
+    transition: var(--transition-speed) ease;
+}
+
+/* =========================MEDIA QUERY======================= */
+/* Desktop Screen */
+@media screen and (min-width: 1281px){
+    footer a:hover{
+        color: var(--yellow);
+    }
+}
+
+/* Tablet Screen */
+@media screen and (max-width: 1280px){
+    footer{
+        margin-bottom: 7.7rem;
+    }
+}
+
+
+/* Small Screen */
+@media screen and (max-width: 750px){
+    footer{
+        align-items: flex-start;
+        margin-bottom: 4rem;
     }
 
-    .footer-section span, .credit{
-        font-size: 10px;
+    .contacts ul{
+        flex-direction: column;
+    }
+
+    .info-footer p{
+        padding: 0;
+        color: white;
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    footer{
+        padding: 0.5rem;
+    }
+
+    .contacts, .info-footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacts{
+        margin-bottom: 0.9rem;
+    }
+
+    .info-footer{
+        font-size: 0.65rem;
     }
 }

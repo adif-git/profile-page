@@ -1,20 +1,20 @@
-// MAIN PART FOR REACT.JS WEB
-// SEPARATED INTO 3 MAIN PARTS: HEADER, MAIN, AND FOOTER
-
 import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
+import Navbar from './Navbar'
+import Home from './Home'
+import Projects from './Projects'
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
+      <Router>
+        <Navbar/>
+        <main>
+          <Route exact path='/' component={Home}/>
+          <Route path='/projects' component={Projects}/>
+        </main>
+      </Router>
     );
   }
 }

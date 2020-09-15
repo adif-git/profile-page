@@ -1,76 +1,69 @@
-// THIS IS HEADER PART OF THE WEB
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-scroll'
 
-import React from 'react'
-import {Navbar, Nav} from 'react-bootstrap'
-import {Link} from 'react-scroll'
 import './Header.css'
 
-class Header extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={
-      //Initial state for scroll position
-      position: 0,
-    };
-    this.listenToScroll = this.listenToScroll.bind(this);
-  }
+const Header = props => {
+    const [position, setPosition] = useState(0)
 
-  componentDidMount(){
-    window.addEventListener('scroll', this.listenToScroll)
-  }
-
-  componentWillUnmount(){
-    window.removeEventListener('scroll', this.listenToScroll)
-  }
-
-  listenToScroll=()=>{
-    //Get the value when scrolled vertically
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop; 
-    //Measure the height (scrollHeight(with padding & margin) - clientHeight(without border,margin))
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    //Scrolled value ranged from 0-1
-    const scrolled = winScroll / height;
-    this.setState({
-      position: scrolled, 
-      //Update scroll position value
+    useEffect(() => {
+        window.addEventListener('scroll', listenToScroll)
+        return () => {
+            window.removeEventListener('scroll', listenToScroll)
+        }
     })
 
-    let nav = document.getElementById('nav');
-    //Navbar will be colored if passing profile section location
-    if(this.state.position > 0.045){
-        nav.classList.add("navbar-colored");
-        nav.classList.remove("navbar");
+    const listenToScroll = () => {
+        //Get the value when scrolled vertically
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        //Measure the height (scrollHeight(with padding & margin) - clientHeight(without border,margin))
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        //Scrolled value ranged from 0-1
+        const scrolled = winScroll / height;
+        //Update scroll position value
+        setPosition(scrolled)
+
+        let nav = document.getElementById('home-nav');
+        //Navbar will be colored if passing profile section location
+        if (position > 0.005) {
+            nav.style.background = 'rgb(156, 2, 2, 0.92)';
+        }
+        else {
+            nav.style.background = 'rgb(156, 2, 2, 0)';
+        }
     }
-    else{
-        nav.classList.add("navbar");
-        nav.classList.remove("navbar-colored");
-    }
-  }
-  render(){
-    return(
-      <div className="aboutme-section">
-        <Navbar collapseOnSelect expand="lg" fixed="top" id="nav" className="navbar navbar-dark p-3 ">
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-light"/>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
-              <Link activeClass="active" to="aboutme-section" className="nav-content" offset={-60}  smooth={true} duration={500}>
-                About Me
-              </Link>
-              <Link activeClass="active" to="skills-section" className="nav-content" offset={-60}  smooth={true} duration={500}>
-                Skills
-              </Link>
-              <Link activeClass="active" to="work-section" className="nav-content" offset={-60} smooth={true} duration={500}>
-                Work Experiences
-              </Link>
-              <Link activeClass="active" to="projects-section" className="nav-content" offset={-60}  smooth={true} duration={500}>
-                Projects
-              </Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-    );
-  }
+
+    return (
+        <nav className="home-navbar" id="home-nav">
+            <ul className="home-navbar-nav">
+                <li className="home-nav-item">
+                    <Link activeClass="active" to="intro-section" className="home-nav-link" smooth={true} duration={500}>
+                        Introduction
+                    </Link>
+                </li>
+                <li className="home-nav-item">
+                    <Link activeClass="active" to="skills-section" className="home-nav-link" offset={-135} smooth={true} duration={500}>
+                        Skills
+                    </Link>
+                </li>
+                <li className="home-nav-item">
+                    <Link activeClass="active" to="works-section" className="home-nav-link" offset={-100} smooth={true} duration={300}>
+                        Work Experiences
+                    </Link>
+                </li>
+                <li className="home-nav-item">
+                    <Link activeClass="active" to="education-section" className="home-nav-link" offset={-100} smooth={true} duration={300}>
+                        Education
+                    </Link>
+                </li>
+                <li className="home-nav-item">
+                    <Link activeClass="active" to="achievement-section" className="home-nav-link" offset={-100} smooth={true} duration={300}>
+                        Achievement
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    )
 }
 
 export default Header

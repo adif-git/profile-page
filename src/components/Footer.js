@@ -1,22 +1,42 @@
-//FILE FOR WEB FOOTER
 import React from 'react'
 import './Footer.css'
 
-class Footer extends React.Component{
-  render(){
+const Footer = props => {
     return(
-      <div className="footer-section">
-        <div className="row justify-content-between">
-          <div className="col">
-            <span>&#169; 2020, adif-git</span>
-          </div>
-          <div className="col">
-            <a href="https://icons8.com/icon/ldnFBJIyOFs1/comparator" className="credit">Credit: Icons by Icons8</a>
-          </div>
-        </div>
-      </div>
-    );
-  }
+        <footer>
+            <div className="contacts">
+                <h3>Contact me:</h3>
+                <ul>
+                    <li className="contact">
+                        <a href="mailto:adif.ladiva@gmail.com" className="">
+                            <i className="fa fa-envelope"></i>
+                            <span className="">adif.ladiva@gmail.com</span>
+                        </a>
+                    </li>
+                    <li className="contact">
+                        <a href="https://github.com/adif-git" className="" target="_blank" rel="noopener noreferrer">
+                            <i className="fa fa-github"></i>
+                            <span className="">adif-git</span>
+                        </a>
+                    </li>
+                    <li className="contact">
+                        <a href="https://linkedin.com/in/ladivab" className="" target="_blank" rel="noopener noreferrer">
+                            <i className="fa fa-linkedin"></i>
+                            <span className="">ladivab</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className="info-footer">
+                <p>
+                    <span>2020 &copy; </span> Created by&nbsp;
+                    <a href="https://github.com/adif-git" className="" target="_blank" rel="noopener noreferrer">
+                            adif-git
+                    </a>
+                </p>
+            </div>
+        </footer>
+    )
 }
 
 export default Footer

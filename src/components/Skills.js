@@ -1,27 +1,44 @@
-import React from 'react'
-import SkillsContent from './SkillsContent'
+import React, {useState} from 'react'
 import skillsList from '../contents/Skills'
 import './Skills.css'
 
-class Skills extends React.Component{
-  render(){
+const Skills = props => {
+    const [skills] = useState(skillsList)
+
+    const itemContent = items => {
+        let content = []
+        items.map((item)=>{
+            return content.push(<li key={item} className="skill">{item}</li>)
+        })
+        return content
+    }
+
     return(
-      <div className="container-fluid skills-section">
-        <h1 className="title"><span className="sign">&#187;</span>SKILLS<span className="sign">&#171;</span></h1>
-        <div className="row row-cols-1 row-cols-md-4 px-lg-5">
-          {skillsList.map((skillItem)=>{
-            return(
-              <SkillsContent
-                key = {skillItem.id}
-                name = {skillItem.name}
-                items = {skillItem.items}
-              />
-            );
-          })}
+        <div className="skills-section">
+            <div className="header-section">
+                <h1>SKILLS</h1>
+            </div>
+            <div className="body-section">
+                <div className="cards">
+                    {skills.map((skill)=>{
+                        return(
+                            <div className="card" key={skill.id}>
+                                <div className="card-header">
+                                <img src={skill.image} alt="..."/>
+                                    <h4 className="card-title">
+                                        {skill.name}
+                                    </h4>
+                                </div>
+                                <div className="card-main">
+                                    {itemContent(skill.items)}
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </div>
-      </div>
     )
-  }
 }
 
-export default Skills;
+export default Skills
