@@ -8,18 +8,18 @@ const Navbar = props => {
         <nav className="navbar">
             <ul className="navbar-nav">
                 <li className="logo">
-                    <a href="/" className="">
+                    <a href="/profile-page" className="">
                         Adif
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/profile-page" className="nav-link">
                         <img src={user} alt='...'></img>
                         <span className="link-text">My Profile</span>
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="/projects" className="nav-link">
+                    <a href="/profile-page/projects" className="nav-link">
                         <img src={tools} alt='...'></img>
                         <span className="link-text">My Projects</span>
                     </a>
