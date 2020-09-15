@@ -11,8 +11,8 @@ class App extends React.Component {
       <Router>
         <Navbar/>
         <main>
-          <Route exact path='/' component={Home}/>
-          <Route path='/projects' component={Projects}/>
+          <Route exact path='/profile-page' component={Home}/>
+          <Route path='/profile-page/projects' component={Projects}/>
         </main>
       </Router>
     );
