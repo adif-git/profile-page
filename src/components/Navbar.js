@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import user from '../resources/icons/user.png'
 import tools from '../resources/icons/tools.png'
 import './Navbar.css'
@@ -8,21 +9,27 @@ const Navbar = props => {
         <nav className="navbar">
             <ul className="navbar-nav">
                 <li className="logo">
-                    <a href="/profile-page" className="">
-                        Adif
-                    </a>
+                    <Link to="/">Adif</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/profile-page" className="nav-link">
+                    <Link to="/" className="nav-link">
                         <img src={user} alt='...'></img>
                         <span className="link-text">My Profile</span>
-                    </a>
+                    </Link>
+                    {/* <a href="/profile-page" className="nav-link">
+                        <img src={user} alt='...'></img>
+                        <span className="link-text">My Profile</span>
+                    </a> */}
                 </li>
                 <li className="nav-item">
-                    <a href="/profile-page/projects" className="nav-link">
+                    <Link to="/projects" className="nav-link">
                         <img src={tools} alt='...'></img>
                         <span className="link-text">My Projects</span>
-                    </a>
+                    </Link>
+                    {/* <a href="/profile-page/projects" className="nav-link">
+                        <img src={tools} alt='...'></img>
+                        <span className="link-text">My Projects</span>
+                    </a> */}
                 </li>
                 <li className="nav-item">
                     <a href="mailto:adif.ladiva@gmail.com" className="nav-link">
