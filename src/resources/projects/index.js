@@ -1,8 +1,8 @@
-export const Goalkeeper = require('./Goalkeeper.png');
-export const Hexapod = require('./Hexapod.png');
-export const IT = require('./IT.png');
-export const Library = require('./Library.png');
-export const Profile = require('./Profile.png');
-export const ProjectTracker = require('./ProjectTracker.png');
-export const WaterTandon = require('./WaterTandon.jpg');
-export const Quadcopter = require('./Quadcopter.jpg');
+export const Goalkeeper = require('./Goalkeeper.webp');
+export const Hexapod = require('./Hexapod.webp');
+export const IT = require('./IT.webp');
+export const Library = require('./Library.webp');
+export const Profile = require('./Profile.webp');
+export const ProjectTracker = require('./ProjectTracker.webp');
+export const WaterTandon = require('./WaterTandon.webp');
+export const Quadcopter = require('./Quadcopter.webp');
