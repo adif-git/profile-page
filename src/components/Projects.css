@@ -4,7 +4,8 @@
 }
 
 #projects-content{
-    background: rgba(0, 7, 29);
+    background: rgba(2,11,38,1);
+    background: linear-gradient(230deg, rgba(0,105,225,1) 0%, rgba(3,32,89,1) 50%, rgba(2,11,38,1) 100%); 
     color: white;
 }
 

@@ -25,11 +25,11 @@ const Header = props => {
 
         let nav = document.getElementById('home-nav');
         //Navbar will be colored if passing profile section location
-        if (position > 0.005) {
-            nav.style.background = 'rgb(156, 2, 2, 0.92)';
+        if (position > 0.01) {
+            nav.style.background = 'linear-gradient(110deg, rgba(156,2,2,1) 32%, rgba(184,0,0,1) 70%)';
         }
         else {
-            nav.style.background = 'rgb(156, 2, 2, 0)';
+            nav.style.background = 'linear-gradient(110deg, rgba(156,2,2,0) 32%, rgba(184,0,0,0) 70%)';
         }
     }
 
