@@ -7,6 +7,7 @@ import './Projects.css'
 
 const Projects = props => {
     SwiperCore.use([Navigation, Pagination]);
+
     const tagsContent = tagsList => {
         let content = []
         for(let idx in tagsList){
@@ -32,7 +33,11 @@ const Projects = props => {
                 {projectsList.map((project)=>{
                     return(
                         <SwiperSlide key={project.id}>
-                            <img src={project.image} alt='...'></img>
+                            <img
+                                src={project.image} 
+                                alt='...'
+                                >
+                            </img>
                             <h3>{project.name}</h3>
                             <div className='description'>
                                 <div className='source'>

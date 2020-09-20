@@ -30,7 +30,9 @@ const Skills = props => {
                                     </h4>
                                 </div>
                                 <div className="card-main">
-                                    {itemContent(skill.items)}
+                                    <ul>
+                                        {itemContent(skill.items)}
+                                    </ul>
                                 </div>
                             </div>
                         )
