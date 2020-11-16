@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import App from './globals/App';
 
-import './index.css'
+import './globals/fonts/fonts.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
