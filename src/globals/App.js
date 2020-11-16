@@ -3,8 +3,12 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from '../components/Home/Navbar/Navbar';
 import SplashScreen from '../components/SplashScreen/SplashScreen';
+import Home from '../components/Home/Home';
+import Projects from '../components/Home/Projects/Projects';
 
-const App = (props) => {
+import './app.scss';
+
+const App = () => {
   const [splash, setSplash] = useState(false);
 
   useEffect(() => {
@@ -19,12 +23,12 @@ const App = (props) => {
       {splash ? (
         <Router basename="/">
           <Navbar />
-          {/* <main>
+          <main>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/projects" component={Projects} />
             </Switch>
-          </main> */}
+          </main>
         </Router>
       ) : (
         <SplashScreen />

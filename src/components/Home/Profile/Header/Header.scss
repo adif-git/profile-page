@@ -1,0 +1,51 @@
+@import '../../../../globals/variables';
+
+.profile__header {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: none;
+  color: lighten($base-blue, 5%);
+  z-index: 1;
+  transition: $transition-speed * 2;
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    &__link {
+      cursor: pointer;
+      padding: 10px 20px;
+      margin: 35px 20px 10px;
+      text-align: center;
+      display: block;
+      font-weight: 700;
+      transition: $transition-speed;
+    }
+  }
+
+  @media screen and (min-width: 1281px) {
+    padding: 1em 0;
+    top: 0;
+    justify-content: flex-end;
+
+    &__nav__link:hover {
+      transform: translateY(8px);
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 0.5em 0;
+    bottom: 4rem;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}

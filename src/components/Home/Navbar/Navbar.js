@@ -1,54 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import user from './img/user.png';
 import tools from './img/tools.png';
-import './Navbar.css';
+
+import './Navbar.scss';
 
 const Navbar = (props) => {
   return (
     <nav className="navbar">
-      <ul className="navbar-nav">
-        <li className="logo">
+      <ul className="navbar__nav">
+        <li className="navbar__nav__logo">
           <Link to="/">Adif</Link>
         </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-link">
+        <li className="navbar__nav__item">
+          <Link to="/" className="navbar__nav__link">
             <img src={user} alt="..."></img>
-            <span className="link-text">My Profile</span>
+            <span>My Profile</span>
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/projects" className="nav-link">
+        <li className="navbar__nav__item">
+          <Link to="/projects" className="navbar__nav__link">
             <img src={tools} alt="..."></img>
-            <span className="link-text">My Projects</span>
+            <span>My Projects</span>
           </Link>
         </li>
-        <li className="nav-item">
-          <a href="mailto:adif.ladiva@gmail.com" className="nav-link">
+        <li className="navbar__nav__item">
+          <a href="mailto:adif.ladiva@gmail.com" className="navbar__nav__link">
             <i className="fa fa-envelope"></i>
-            <span className="link-text">adif.ladiva@gmail.com</span>
+            <span>adif.ladiva@gmail.com</span>
           </a>
         </li>
-        <li className="nav-item">
+        <li className="navbar__nav__item">
           <a
             href="https://github.com/adif-git"
-            className="nav-link"
+            className="navbar__nav__link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa fa-github"></i>
-            <span className="link-text">GitHub</span>
+            <span>GitHub</span>
           </a>
         </li>
-        <li className="nav-item">
+        <li className="navbar__nav__item">
           <a
             href="https://linkedin.com/in/ladivab"
-            className="nav-link"
+            className="navbar__nav__link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa fa-linkedin"></i>
-            <span className="link-text">LinkedIn</span>
+            <span>LinkedIn</span>
           </a>
         </li>
       </ul>
