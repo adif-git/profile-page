@@ -16,70 +16,94 @@
   }
 }
 
-.country {
-  color: #ff1b1b;
-}
+.intro__container {
+  width: 85%;
+  height: 20%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  display: flex;
 
-.name {
-  color: var(--yellow);
-}
+  &__hello,
+  &__name {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
 
-.welcome {
-  padding: 0;
-  margin: 0;
-  font-weight: 700;
-  color: var(--white-dark);
-  border-right: 5px solid var(--yellow);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.welcome-anim {
-  animation: typewriter 2s steps(30) var(--transition-speed) 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: var(--yellow);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-/* =========================MEDIA QUERY======================= */
-
-/* Tablet and Desktop Screen*/
-@media screen and (min-width: 401px) {
-  .welcome {
-    width: 50vw;
-    font-size: 4vw;
-  }
-
-  @keyframes typewriter {
-    from {
-      width: 0;
+    & h2,
+    & span {
+      font-size: 5.5rem;
     }
-    to {
-      width: 50vw;
+  }
+
+  &__hello {
+    background-color: darken($base-blue, 5%);
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 300ms;
+    opacity: 0;
+    & h2 {
+      color: white;
+      margin: 0;
+    }
+  }
+
+  &__name {
+    & span {
+      color: $base-blue;
+      font-weight: 700;
+      opacity: 0;
     }
   }
 }
 
-/* Small Screen */
-@media screen and (max-width: 400px) {
-  .welcome {
-    width: 80vw;
-    font-size: 6.6vw;
+.fadeInUp {
+  animation-delay: 1s;
+  animation-name: fadeInUpward;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fadeInDown {
+  color: $base-red !important;
+  animation-delay: 1.5s;
+  animation-name: fadeInDownward;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
 
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 80vw;
-    }
+  100% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes fadeInUpward {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInDownward {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 0.95;
   }
 }
