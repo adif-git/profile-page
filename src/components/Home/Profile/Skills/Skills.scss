@@ -1,0 +1,98 @@
+@import '../../../../globals/variables';
+
+.profile__skills {
+  @extend .section;
+
+  &__header {
+    color: $base-blue;
+    text-align: center;
+
+    & h1 {
+      font-size: $font-size-header;
+    }
+
+    & span {
+      color: $base-red;
+      animation: blink 700ms infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet+1) {
+      align-items: baseline;
+    }
+
+    @media screen and (max-width: $tablet) {
+      align-items: stretch;
+    }
+  }
+
+  &__card {
+    flex: auto;
+    background: lighten($base-gray, 30%);
+    opacity: 0;
+    border-radius: 0.4rem;
+    margin: 0 0.5rem;
+    padding: 2rem 1rem 0.5rem;
+    text-align: center;
+    transition: all 1s;
+
+    @media screen and (max-width: $tablet) {
+      flex: 35%;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+      flex: 100%;
+      margin-bottom: 1rem;
+    }
+
+    @for $i from 0 through 4 {
+      &:nth-child(#{$i}) {
+        transition-delay: $i * 200ms;
+      }
+    }
+
+    &__header {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      padding: 0.3rem 0.9rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: yellow;
+      background: linear-gradient(
+        150deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 29%,
+        rgba(0, 104, 255, 1) 100%
+      );
+      font-size: 1.1rem;
+      border-radius: 6px;
+    }
+
+    &__skills {
+      padding-left: 0;
+    }
+
+    &__skill {
+      margin-bottom: 0.5rem;
+      list-style: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
+}

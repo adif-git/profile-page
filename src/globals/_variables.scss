@@ -2,5 +2,16 @@ $base-blue: #032059;
 $base-gray: #b6b6b6;
 $base-red: #ff1600;
 
+$desktop: 1280px;
+$tablet: 1024px;
+$mobile: 768px;
+$mobile-small: 480px;
+
+$font-size-header: 3.5rem;
+
 $transition-speed: 200ms;
 $main-font: 'Noto Sans JP';
+
+.section {
+  margin: 7rem 1.8rem;
+}

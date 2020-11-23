@@ -1,9 +1,9 @@
-import chip from '../resources/icons/chip.png';
-import console from '../resources/icons/console.png';
-import web from '../resources/icons/web.png';
-import other from '../resources/icons/other.png';
+import chip from './img/chip.png';
+import console from './img/console.png';
+import web from './img/web.png';
+import other from './img/other.png';
 
-const skillsList = [
+const skillsData = [
   {
     id: '1',
     name: 'Programming',
@@ -45,4 +45,4 @@ const skillsList = [
   },
 ];
 
-export default skillsList;
+export default skillsData;

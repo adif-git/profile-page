@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {splash ? (
         <Router basename="/">
           <Navbar />
@@ -33,7 +33,7 @@ const App = () => {
       ) : (
         <SplashScreen />
       )}
-    </div>
+    </>
   );
 };
 

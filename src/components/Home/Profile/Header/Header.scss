@@ -3,14 +3,13 @@
 .profile__header {
   display: flex;
   position: fixed;
-  left: 0;
+  width: 100%;
   right: 0;
-  flex-direction: row;
-  justify-content: flex-end;
-  background: none;
   color: lighten($base-blue, 5%);
   z-index: 1;
   transition: $transition-speed * 2;
+  justify-content: flex-end;
+  opacity: 0.9;
 
   &__nav {
     margin: 0;
@@ -20,8 +19,8 @@
 
     &__link {
       cursor: pointer;
-      padding: 10px 20px;
-      margin: 35px 20px 10px;
+      font-size: 1rem;
+      margin: 25px 20px 10px;
       text-align: center;
       display: block;
       font-weight: 700;
@@ -29,23 +28,18 @@
     }
   }
 
-  @media screen and (min-width: 1281px) {
-    padding: 1em 0;
-    top: 0;
-    justify-content: flex-end;
-
+  @media screen and (min-width: $tablet+1) {
+    padding-left: 5rem;
     &__nav__link:hover {
-      transform: translateY(8px);
+      transform: translateY(3px);
     }
   }
 
-  @media screen and (max-width: 1280px) {
-    padding: 0.5em 0;
-    bottom: 4rem;
+  @media screen and (max-width: $tablet) {
     justify-content: center;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: $mobile) {
     display: none;
   }
 }

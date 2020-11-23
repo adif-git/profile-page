@@ -1,0 +1,251 @@
+@import '../../../../globals/variables';
+
+.profile__education {
+  background: $base-blue;
+
+  &__header {
+    margin: 0 2rem 0;
+
+    & h2 {
+      display: inline-block;
+      font-size: $font-size-header;
+      padding-top: 2rem;
+      color: lighten($base-gray, 20%);
+      letter-spacing: -0.4rem;
+      border-bottom: 5px solid $base-red;
+
+      @media screen and (min-width: $mobile-small+1) {
+        font-size: $font-size-header;
+      }
+
+      @media screen and (max-width: $mobile-small) {
+        font-size: $font-size-header - 1rem;
+      }
+
+      & span {
+        color: yellow;
+      }
+    }
+  }
+
+  &__body {
+    padding: 0 2rem;
+  }
+
+  &__degree {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 0 2rem;
+    color: lighten($base-gray, 25%);
+
+    @media screen and (min-width: $mobile-small+1) {
+      flex-direction: row;
+
+      & h3,
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media screen and (max-width: $mobile-small) {
+      flex-direction: column;
+
+      & h3,
+      h4 {
+        font-size: 1rem;
+      }
+    }
+
+    & h3,
+    h4,
+    p {
+      flex: 50%;
+      margin: 0;
+    }
+
+    & h4 {
+      color: yellow;
+
+      @media screen and (min-width: $mobile-small+1) {
+        text-align: right;
+      }
+
+      @media screen and (max-width: $mobile-small) {
+        text-align: left;
+      }
+    }
+
+    & ul {
+      margin: 0;
+      padding: 0.5rem 0;
+      & li {
+        list-style: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding-bottom: 3px;
+        color: darken($base-gray, 5%);
+      }
+    }
+  }
+
+  &__certificates {
+    padding-bottom: 2rem;
+
+    & h3,
+    h4,
+    h5 {
+      margin: 0;
+    }
+
+    & h3 {
+      color: yellow;
+      font-size: 1.2rem;
+    }
+
+    &__cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      flex: auto;
+      background: linear-gradient(
+        60deg,
+        lighten($base-gray, 15%) 0%,
+        lighten($base-gray, 30%) 100%
+      );
+      margin: 0.5rem 1rem 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      & h4 {
+        color: darken($base-red, 5%);
+        padding-bottom: 5px;
+      }
+
+      & h5 {
+        color: darken($base-gray, 55%);
+      }
+    }
+  }
+
+  &__achievement {
+    padding-bottom: 2rem;
+
+    & h3 {
+      color: yellow;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+
+    &__body {
+      display: flex;
+
+      @media screen and (max-width: $mobile) {
+        flex-wrap: wrap;
+        padding: 10px;
+        background-color: lighten($base-gray, 20%);
+        border-radius: 5px;
+        align-items: stretch;
+      }
+    }
+
+    &__img {
+      & img {
+        display: block;
+        width: auto;
+        height: auto;
+      }
+
+      @media screen and (min-width: $tablet+1) {
+        flex-basis: 480px;
+
+        & img {
+          max-width: 480px;
+          max-height: 320px;
+        }
+      }
+
+      @media screen and (max-width: $tablet) {
+        flex-basis: 320px;
+
+        & img {
+          max-width: 320px;
+          max-height: 160px;
+        }
+      }
+
+      @media screen and (max-width: $mobile) {
+        padding-bottom: 10px;
+        margin: 0 auto;
+
+        & img {
+          margin: 0 auto;
+          max-width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    &__info {
+      padding: 30px;
+      background: linear-gradient(
+        270deg,
+        lighten($base-gray, 10%) 0%,
+        lighten($base-gray, 25%) 100%
+      );
+      text-align: justify;
+
+      & h4,
+      h5,
+      p {
+        margin: 0;
+      }
+
+      & h4 {
+        color: $base-blue;
+      }
+
+      @media screen and (min-width: $tablet+1) {
+        padding: 30px;
+        & h4 {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        & h5 {
+          margin-bottom: 1rem;
+          font-size: 1rem;
+        }
+      }
+
+      @media screen and (max-width: $tablet) {
+        padding: 10px;
+
+        & h4 {
+          font-size: 0.9rem;
+          color: $base-blue;
+          margin-bottom: 0.5rem;
+        }
+
+        & h5 {
+          margin-bottom: 0.5rem;
+          font-size: 0.8rem;
+        }
+
+        & p {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media screen and (max-width: $mobile) {
+        & h4,
+        h5 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

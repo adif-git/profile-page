@@ -2,7 +2,6 @@ import * as image from './img/index';
 
 const projectsData = [
   {
-    id: '1',
     name: 'IT Ticket System',
     image: image.IT,
     tags: [
@@ -20,7 +19,6 @@ const projectsData = [
     github: 'https://github.com/adif-git/IT-Tickets',
   },
   {
-    id: '2',
     name: 'Goalkeeper Robot',
     image: image.Goalkeeper,
     tags: [
@@ -38,7 +36,6 @@ const projectsData = [
     github: '',
   },
   {
-    id: '3',
     name: 'Quadcopter for Vehicle Counting',
     image: image.Quadcopter,
     tags: ['Raspberry Pi', 'Computer Vision', 'Embedded System', 'C++'],
@@ -50,7 +47,6 @@ const projectsData = [
     github: '',
   },
   {
-    id: '4',
     name: 'Hexapod Robot',
     image: image.Hexapod,
     tags: ['Raspberry Pi', 'Arduino', 'Embedded System', 'C++', 'Python'],
@@ -62,7 +58,6 @@ const projectsData = [
     github: '',
   },
   {
-    id: '5',
     name: 'Water Tandon',
     image: image.WaterTandon,
     tags: ['Embedded System', 'Assembly', 'AT89S51'],
@@ -74,7 +69,6 @@ const projectsData = [
     github: 'https://github.com/adif-git/Water-Tandon',
   },
   {
-    id: '6',
     name: 'Project Tracker',
     image: image.ProjectTracker,
     tags: [
@@ -93,7 +87,6 @@ const projectsData = [
     github: 'https://github.com/adif-git/Project-Tracker',
   },
   {
-    id: '7',
     name: 'Library',
     image: image.Library,
     tags: ['Web Development', 'Django', 'HTML', 'CSS', 'Python', 'MySQL'],
@@ -104,7 +97,6 @@ const projectsData = [
     github: 'https://github.com/adif-git/library',
   },
   {
-    id: '8',
     name: 'GitHub Profile Page',
     image: image.Profile,
     tags: [

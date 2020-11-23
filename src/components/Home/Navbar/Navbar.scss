@@ -8,7 +8,9 @@
     lighten($base-blue, 2%) 70%
   );
   transition: $transition-speed ease;
-  z-index: 2;
+  z-index: 5;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   &__nav {
     list-style: none;
@@ -84,16 +86,15 @@
         font-weight: 900;
         text-decoration: none;
         color: lighten($base-gray, 10%);
-        line-height: 4.7rem;
+        line-height: 5rem;
         text-transform: uppercase;
       }
     }
   }
 
-  /* Desktop Screen */
-  @media screen and (min-width: 1281px) {
+  @media screen and (min-width: $tablet+1) {
     top: 0;
-    width: 5rem;
+    width: 80px;
     height: 100vh;
 
     &:hover {
@@ -116,11 +117,10 @@
     }
   }
 
-  /* Tablet Screen */
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: $tablet) {
     bottom: 0;
     width: 100vw;
-    height: 4rem;
+    height: 60px;
 
     &__nav {
       flex-direction: row;
@@ -145,8 +145,7 @@
     }
   }
 
-  /* Small Screen */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: $mobile-small+1) {
     &__nav__link img {
       display: none;
     }

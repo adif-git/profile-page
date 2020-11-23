@@ -1,0 +1,87 @@
+@import '../../../../globals/variables';
+
+footer {
+  background: darken($base-gray, 58%);
+  padding: 20px 40px;
+
+  & h3 {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__contacts {
+    & ul {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+
+      & li {
+        padding: 0 20px;
+
+        & a {
+          text-decoration: none;
+          color: white;
+
+          @media screen and (min-width: $tablet+1) {
+            &:hover span {
+              display: inline-block;
+              animation: fadeIn 0.7s;
+            }
+          }
+
+          & i {
+            font-size: 1.5rem;
+
+            @media screen and (max-width: $mobile-small) {
+              font-size: 1.2rem !important;
+            }
+          }
+
+          & span {
+            font-size: 0.85rem;
+            margin-left: 20px;
+            padding: 3px 5px;
+
+            @media screen and (min-width: $tablet+1) {
+              display: none;
+            }
+
+            @media screen and (max-width: $tablet) {
+              display: inline-block;
+            }
+
+            @media screen and (max-width: $mobile-small) {
+              display: none;
+            }
+          }
+
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: scale(0);
+            }
+            to {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+
+          @keyframes fadeOut {
+            from {
+              opacity: 1;
+            }
+            to {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

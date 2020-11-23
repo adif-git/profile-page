@@ -1,40 +1,78 @@
-import React, {useState} from 'react'
-import certsList from '../contents/Certifications'
-import './Education.css'
+import React, { useEffect } from 'react';
+import certificationsData from './Certifications';
+import GKS from './GKS.jpg';
+import './Education.scss';
 
-const Education = props => {
-    const [certificates] = useState(certsList)
+const Education = (props) => {
+  useEffect(() => {
+    // const showDiv = document.getElementsByClassName(
+    //   'profile__education__degree'
+    // );
+    // if (props.scrollPosition > 2300) {
+    //   showDiv[0].style.opacity = 1;
+    // } else {
+    //   showDiv[0].style.opacity = 1;
+    // }
+  });
 
-    return(
-        <div className="education-section">
-            <div className="header-section">
-                <h1>EDUCATION</h1>
-            </div>
-            <div className="body-section">
-                <div className="education">
-                    <div className="degree">
-                        <h3>Bachelor of Electrical Engineering</h3>
-                        <h4>Institut Teknologi Sepuluh Nopember</h4>
-                        <p>Concentration : Electronics</p>
-                        <p>GPA : 3.63 / 4.00</p>
-                    </div>
-                    <div className="certifications">
-                        <h2>Certifications: </h2>
-                        <div className="certificate">
-                            {certificates.map((certificate)=>{
-                                return(
-                                    <div key={certificate.id}>
-                                        <h3>{certificate.title}</h3>
-                                        <h4>{certificate.organization}</h4>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="profile__education">
+      <div className="profile__education__header">
+        <h2>
+          EDUCATION <span>.</span>
+        </h2>
+      </div>
+      <div className="profile__education__body">
+        <div className="profile__education__degree">
+          <h3>Bachelor of Electrical Engineering</h3>
+          <h4>Institut Teknologi Sepuluh Nopember</h4>
+          <ul>
+            <li>Concentration : Electronics</li>
+            <li>GPA : 3.63 / 4.00</li>
+          </ul>
         </div>
-    )
-}
+        <div className="profile__education__certificates">
+          <h3>Certificates</h3>
+          <div className="profile__education__certificates__cards">
+            {certificationsData.map((certificate) => {
+              return (
+                <div
+                  className="profile__education__certificates__card"
+                  key={certificate.id}
+                >
+                  <h4>{certificate.title}</h4>
+                  <h5>{certificate.organization}</h5>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="profile__education__achievement">
+          <h3>Achievement</h3>
+          <div className="profile__education__achievement__body">
+            <div className="profile__education__achievement__img">
+              <img src={GKS} alt="..."></img>
+            </div>
+            <div className="profile__education__achievement__info">
+              <h4>
+                Global Korean Scholarship (GKS) for ASEAN Countries Science and
+                Engineering Students
+              </h4>
+              <h5>July 2017</h5>
+              <p>
+                One of the selected 120 ASEAN students for a month opportunity
+                to study in South Korea which fully funded by South Korea's
+                Ministry of Education consists of lab research, cultural
+                activities, and lectures. Research topic about energy harvesting
+                on power lines using electromagnetic field at Chung-Ang
+                University, Seoul.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Education
+export default Education;

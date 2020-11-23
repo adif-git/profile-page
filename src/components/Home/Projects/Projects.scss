@@ -1,0 +1,88 @@
+@import '../../../globals/variables';
+
+#projects {
+  box-sizing: border-box;
+
+  @media screen and (min-width: $tablet+1) {
+    height: 100vh;
+  }
+
+  @media screen and (max-width: $tablet) {
+    height: calc(99vh - 60px);
+  }
+
+  .swiper {
+    &-pagination-progressbar {
+      height: 5px;
+
+      &-fill {
+        background: red;
+      }
+    }
+
+    &-button {
+      &-prev,
+      &-next {
+        font-weight: 900;
+        color: $base-red;
+        border-radius: 40%;
+        background: darken($base-gray, 65%);
+
+        @media screen and (min-width: $tablet+1) {
+          padding: 25px;
+        }
+
+        @media screen and (max-width: $tablet) {
+          padding: 20px;
+        }
+      }
+    }
+
+    &-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-slide {
+      height: calc((100% - 30px) / 2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      animation: fadeIn 1.3s forwards;
+      opacity: 0;
+
+      @for $i from 0 through 8 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 200ms;
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      & img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        transition: 200ms ease-in;
+        border-radius: 20px;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

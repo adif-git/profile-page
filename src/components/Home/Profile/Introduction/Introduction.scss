@@ -1,6 +1,7 @@
 @import '../../../../globals/variables';
 
 .profile__intro {
+  border-bottom: 5px dashed $base-blue;
   &__particles {
     position: absolute;
     left: 0;
@@ -13,32 +14,49 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 4rem;
+    }
   }
 }
 
 .intro__container {
   width: 85%;
-  height: 20%;
-  margin: 0 auto;
-  margin-top: 10vh;
+  margin: 10vh auto 0;
+
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 
   &__hello,
   &__name {
-    flex-basis: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
+    flex: auto;
+    width: 50%;
 
     & h2,
     & span {
-      font-size: 5.5rem;
+      font-size: 4.5rem;
+
+      @media screen and (max-width: $mobile-small) {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 
   &__hello {
-    background-color: darken($base-blue, 5%);
+    background: linear-gradient(
+      60deg,
+      darken($base-blue, 5%) 0%,
+      lighten($base-blue, 10%) 60%
+    );
+    padding: 20px 0;
     animation-name: fadeIn;
     animation-fill-mode: forwards;
     animation-duration: 1s;
@@ -47,6 +65,10 @@
     & h2 {
       color: white;
       margin: 0;
+    }
+
+    @media screen and (max-width: $mobile-small) {
+      padding: 0.7rem 0;
     }
   }
 

@@ -46,12 +46,6 @@ const Introduction = (props) => {
         />
 
         <div className="profile__intro__overlay">
-          {/* <div className="introduction">
-            <p className="welcome welcome-anim">
-              I'm <span className="name">Adif</span> from
-              <span className="country"> Indonesia</span>!
-            </p>
-          </div> */}
           <div className="intro__container">
             <div className="intro__container__hello">
               <h2>HELLO!</h2>

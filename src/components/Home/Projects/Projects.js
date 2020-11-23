@@ -1,85 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
 import projectsData from './ProjectsData';
+import Modal from './Modal';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
-import './Projects.css';
+import './Projects.scss';
 
 const Projects = (props) => {
   SwiperCore.use([Navigation, Pagination]);
 
-  const tagsContent = (tagsList) => {
-    let content = [];
-    for (let idx in tagsList) {
-      content.push(
-        <div className="tag" key={tagsList[idx]}>
-          {tagsList[idx]}
-        </div>
-      );
-    }
-    return content;
+  const [showModal, setShowModal] = useState(false);
+  const [projectIndex, setProjectIndex] = useState(0);
+
+  const handleOpenModal = (index) => {
+    setShowModal(!showModal);
+    setProjectIndex(index);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(!showModal);
   };
 
   return (
-    <div className="projects">
+    <>
+      <Modal
+        show={showModal}
+        projectIndex={projectIndex}
+        onClose={handleCloseModal}
+      />
       <Swiper
+        slidesPerColumn={2}
+        spaceBetween={10}
+        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            freeMode: true,
+            draggable: true,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            freeMode: true,
+            draggable: true,
+          },
+        }}
         navigation
         pagination={{
-          dynamicBullets: true,
+          type: 'progressbar',
         }}
-        id="projects-content"
-        spaceBetween={50}
-        slidesPerView={1}
+        id="projects"
+        freeMode="true"
+        draggable="true"
       >
-        {projectsData.map((project) => {
+        {projectsData.map((project, index) => {
           return (
-            <SwiperSlide key={project.id}>
-              <img src={project.image} alt="..."></img>
-              <h3>{project.name}</h3>
-              <div className="description">
-                <div className="source">
-                  {project.github !== '' ? (
-                    <a
-                      className="fa fa-github"
-                      href={project.github}
-                      aria-hidden={false}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {null}
-                    </a>
-                  ) : null}
-                  {project.link !== '' ? (
-                    <a
-                      className="fa fa-link"
-                      href={project.link}
-                      aria-hidden={false}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {null}
-                    </a>
-                  ) : null}
-                  {project.video !== '' ? (
-                    <a
-                      className="fa fa-film"
-                      href={project.video}
-                      aria-hidden={false}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {null}
-                    </a>
-                  ) : null}
-                </div>
-                <p>{project.description}</p>
-                <div className="tags">{tagsContent(project.tags)}</div>
-              </div>
+            <SwiperSlide key={index}>
+              <img
+                src={project.image}
+                alt="..."
+                onClick={() => handleOpenModal(index)}
+              ></img>
             </SwiperSlide>
           );
         })}
       </Swiper>
-    </div>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ const Navbar = (props) => {
     <nav className="navbar">
       <ul className="navbar__nav">
         <li className="navbar__nav__logo">
-          <Link to="/">Adif</Link>
+          <Link to="/">ADIF</Link>
         </li>
         <li className="navbar__nav__item">
           <Link to="/" className="navbar__nav__link">

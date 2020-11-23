@@ -1,26 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 import './Header.scss';
 
 const Header = (props) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  let nav = document.getElementsByClassName('profile__header');
-
-  const listenToScroll = () => {
-    setScrollPosition(window.pageYOffset);
-    if (scrollPosition > 5) {
-      nav[0].style.background = 'red';
-    } else {
-      nav[0].style.background = 'none';
-    }
-  };
+  let profileHeader = document.getElementsByClassName('profile__header');
 
   useEffect(() => {
-    window.addEventListener('scroll', listenToScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', listenToScroll);
-    };
+    if (props.scrollPosition > 300) {
+      profileHeader[0].style.background = '#e41520';
+      profileHeader[0].style.color = 'white';
+    } else {
+      profileHeader[0].style.background = 'none';
+      profileHeader[0].style.color = '#021740';
+    }
   });
 
   return (
@@ -29,7 +22,7 @@ const Header = (props) => {
         <li className="">
           <Link
             activeClass="active"
-            to="intro-section"
+            to="profile__intro"
             className="profile__header__nav__link"
             smooth={true}
             duration={500}
@@ -40,9 +33,9 @@ const Header = (props) => {
         <li className="">
           <Link
             activeClass="active"
-            to="skills-section"
+            to="profile__skills"
             className="profile__header__nav__link"
-            offset={-135}
+            offset={-100}
             smooth={true}
             duration={500}
           >
@@ -52,7 +45,7 @@ const Header = (props) => {
         <li className="">
           <Link
             activeClass="active"
-            to="works-section"
+            to="profile__works"
             className="profile__header__nav__link"
             offset={-100}
             smooth={true}
@@ -64,25 +57,13 @@ const Header = (props) => {
         <li className="">
           <Link
             activeClass="active"
-            to="education-section"
+            to="profile__education"
             className="profile__header__nav__link"
-            offset={-100}
+            offset={-55}
             smooth={true}
             duration={300}
           >
             Education
-          </Link>
-        </li>
-        <li className="">
-          <Link
-            activeClass="active"
-            to="achievement-section"
-            className="profile__header__nav__link"
-            offset={-100}
-            smooth={true}
-            duration={300}
-          >
-            Achievement
           </Link>
         </li>
       </ul>

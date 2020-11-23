@@ -5,26 +5,38 @@
 }
 
 html {
-  :root {
-    color: black;
+  &:root {
     font-size: 16px;
     font-family: $main-font, Arial;
+
+    @media screen and (min-width: $tablet+1) {
+      --swiper-navigation-size: 20px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      --swiper-navigation-size: 15px;
+    }
   }
 
   body {
-    background-color: lighten($base-gray, 45%);
+    background-color: lighten($base-gray, 23%);
     margin: 0;
     padding: 0;
 
-    @media screen and (min-width: 1281px) {
+    main {
+      position: relative;
+      height: 100%;
+    }
+
+    @media screen and (min-width: $tablet+1) {
       main {
         margin-left: 5rem;
       }
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $tablet) {
       main {
-        margin: 0;
+        padding-bottom: 60px;
       }
     }
   }
