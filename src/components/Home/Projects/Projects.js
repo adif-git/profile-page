@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import projectsData from './ProjectsData';
-import Modal from './Modal';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
+
+import Modal from './Modal';
+import { projectsData } from './assets/data';
 import './Projects.scss';
 
 const Projects = (props) => {

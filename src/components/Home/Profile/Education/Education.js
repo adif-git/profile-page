@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
-import certificationsData from './Certifications';
-import GKS from './GKS.jpg';
+import React from 'react';
+import { certificationsData } from './assets/data';
+import GKS from './assets/img/GKS.jpg';
 import './Education.scss';
 
 const Education = (props) => {
-  useEffect(() => {
-    // const showDiv = document.getElementsByClassName(
-    //   'profile__education__degree'
-    // );
-    // if (props.scrollPosition > 2300) {
-    //   showDiv[0].style.opacity = 1;
-    // } else {
-    //   showDiv[0].style.opacity = 1;
-    // }
-  });
-
   return (
     <div className="profile__education">
       <div className="profile__education__header">

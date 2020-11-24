@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navbar from '../components/Home/Navbar/Navbar';
-import SplashScreen from '../components/SplashScreen/SplashScreen';
-import Home from '../components/Home/Home';
-import Projects from '../components/Home/Projects/Projects';
+import Navbar from './components/Home/Navbar/Navbar';
+import SplashScreen from './components/SplashScreen/SplashScreen';
+import Home from './components/Home/Home';
+import Projects from './components/Home/Projects/Projects';
 
-import './app.scss';
+import './App.scss';
 
 const App = () => {
   const [splash, setSplash] = useState(false);

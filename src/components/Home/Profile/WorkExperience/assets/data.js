@@ -1,4 +1,4 @@
-const workData = [
+export const worksData = [
   {
     id: '1',
     name: 'IT Support',
@@ -36,5 +36,3 @@ const workData = [
       'Pratical work as Instrumentation Engineer at Bayah site, Banten. Study about DCS, PLC, sensors, and perform maintenances for all electrical instrumentations at site.',
   },
 ];
-
-export default workData;

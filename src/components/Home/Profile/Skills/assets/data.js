@@ -1,19 +1,16 @@
-import chip from './img/chip.png';
-import console from './img/console.png';
-import web from './img/web.png';
-import other from './img/other.png';
+import * as image from './img/index';
 
-const skillsData = [
+export const skillsData = [
   {
     id: '1',
     name: 'Programming',
-    image: console,
+    image: image.console,
     items: ['Python', 'C', 'JavaScript', 'C++'],
   },
   {
     id: '2',
     name: 'Embedded System',
-    image: chip,
+    image: image.chip,
     items: [
       'Arduino',
       'Eagle',
@@ -25,7 +22,7 @@ const skillsData = [
   {
     id: '3',
     name: 'Web Development',
-    image: web,
+    image: image.web,
     items: [
       'HTML',
       'CSS',
@@ -40,9 +37,7 @@ const skillsData = [
   {
     id: '4',
     name: 'Other',
-    image: other,
+    image: image.other,
     items: ['Adobe Photoshop', 'Linux', 'Git'],
   },
 ];
-
-export default skillsData;

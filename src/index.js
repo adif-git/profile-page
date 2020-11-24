@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './globals/App';
+import App from './App';
 
 import './globals/fonts/fonts.scss';
 

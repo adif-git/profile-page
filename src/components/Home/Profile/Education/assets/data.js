@@ -1,4 +1,4 @@
-const certificationsData = [
+export const certificationsData = [
   {
     id: '1',
     title: 'Web Development Path (Node.js)',
@@ -15,5 +15,3 @@ const certificationsData = [
     organization: 'Cisco',
   },
 ];
-
-export default certificationsData;

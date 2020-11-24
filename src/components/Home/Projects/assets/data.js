@@ -1,9 +1,9 @@
 import * as image from './img/index';
 
-const projectsData = [
+export const projectsData = [
   {
     name: 'IT Ticket System',
-    image: image.IT,
+    image: image.it,
     tags: [
       'Web Development',
       'React.js',
@@ -20,7 +20,7 @@ const projectsData = [
   },
   {
     name: 'Goalkeeper Robot',
-    image: image.Goalkeeper,
+    image: image.goalkeeper,
     tags: [
       'Raspberry Pi',
       'Arduino',
@@ -37,7 +37,7 @@ const projectsData = [
   },
   {
     name: 'Quadcopter for Vehicle Counting',
-    image: image.Quadcopter,
+    image: image.quadcopter,
     tags: ['Raspberry Pi', 'Computer Vision', 'Embedded System', 'C++'],
     description:
       "Build from scratch quadcopter with only purpose to count number of vehicles that are travel on road in real time using computer vision. Capable to count with approximately 60% accuracy because calculated without machine learning. Besides number of vehicles, quadcopter's altitude and video stream also will be recorded.",
@@ -48,7 +48,7 @@ const projectsData = [
   },
   {
     name: 'Hexapod Robot',
-    image: image.Hexapod,
+    image: image.hexapod,
     tags: ['Raspberry Pi', 'Arduino', 'Embedded System', 'C++', 'Python'],
     description:
       'Hexapod robot which can be remotely control through WiFi. User will control robot movement wirelessly.',
@@ -59,7 +59,7 @@ const projectsData = [
   },
   {
     name: 'Water Tandon',
-    image: image.WaterTandon,
+    image: image.waterTandon,
     tags: ['Embedded System', 'Assembly', 'AT89S51'],
     description:
       'This is my water tandon project using AT89S51 Microcontroller in Assembly Language. Sensors are used to indicate water level in the container and water level will be showed using 2 red LEDs. White LED shows on water pump behaviour.',
@@ -70,7 +70,7 @@ const projectsData = [
   },
   {
     name: 'Project Tracker',
-    image: image.ProjectTracker,
+    image: image.projectTracker,
     tags: [
       'Web Development',
       'Node.js',
@@ -88,7 +88,7 @@ const projectsData = [
   },
   {
     name: 'Library',
-    image: image.Library,
+    image: image.library,
     tags: ['Web Development', 'Django', 'HTML', 'CSS', 'Python', 'MySQL'],
     description:
       'First time on building website using Django and MySQL as backend. Authorized users have access to add, update, and delete book/author.',
@@ -98,7 +98,7 @@ const projectsData = [
   },
   {
     name: 'GitHub Profile Page',
-    image: image.Profile,
+    image: image.profile,
     tags: [
       'Web Development',
       'React.js',
@@ -114,5 +114,3 @@ const projectsData = [
     github: 'https://github.com/adif-git/profile-page',
   },
 ];
-
-export default projectsData;

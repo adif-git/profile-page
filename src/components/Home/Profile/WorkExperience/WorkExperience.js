@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import workData from './workData';
+import { worksData } from './assets/data';
 import './WorkExperience.scss';
 
 const WorkExperience = (props) => {
@@ -19,7 +19,7 @@ const WorkExperience = (props) => {
       </div>
       <div className="profile__works__column right">
         <div className="profile__works__timeline">
-          {workData.map((work) => {
+          {worksData.map((work) => {
             return (
               <div
                 className="profile__works__timeline__item"

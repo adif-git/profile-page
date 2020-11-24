@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import user from './img/user.png';
-import tools from './img/tools.png';
+import user from './assets/img/user.png';
+import tools from './assets/img/tools.png';
 
 import './Navbar.scss';
 

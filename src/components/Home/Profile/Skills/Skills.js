@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import skillsData from './skillsData';
 
+import { skillsData } from './assets/data';
 import './Skills.scss';
 
 const Skills = (props) => {
