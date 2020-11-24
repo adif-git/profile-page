@@ -56,7 +56,6 @@
 
       & span {
         display: none;
-        margin-left: 2em;
       }
 
       & img {
@@ -113,6 +112,7 @@
       .navbar__nav__link span {
         display: inline;
         transition: $transition-speed;
+        margin-left: 2em;
       }
     }
   }
@@ -130,6 +130,7 @@
 
         & span {
           display: inline;
+          margin: 0;
         }
       }
 
