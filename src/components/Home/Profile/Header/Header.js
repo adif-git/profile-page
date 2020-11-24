@@ -59,7 +59,7 @@ const Header = (props) => {
             activeClass="active"
             to="profile__education"
             className="profile__header__nav__link"
-            offset={-55}
+            offset={-53}
             smooth={true}
             duration={300}
           >
